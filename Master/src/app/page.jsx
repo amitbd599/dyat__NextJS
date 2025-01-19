@@ -1,5 +1,6 @@
 import AboutAreaOne from "@/components/AboutAreaOne";
 import BannerOne from "@/components/BannerOne";
+import BlockChainGalleryAreaOne from "@/components/BlockChainGalleryAreaOne";
 import FeatureAreaOne from "@/components/FeatureAreaOne";
 import HeaderOne from "@/components/HeaderOne";
 import TopAuctionAreaOne from "@/components/TopAuctionAreaOne";
@@ -31,6 +32,9 @@ const page = () => {
 
       {/* TopAuctionAreaOne */}
       <TopAuctionAreaOne />
+
+      {/* BlockChainGalleryAreaOne */}
+      <BlockChainGalleryAreaOne />
     </>
   );
 };
