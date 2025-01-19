@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       {/* <link rel='stylesheet' href='assets/css/bootstrap.min.css' /> */}
-      <link rel='stylesheet' href='assets/css/fontawesome.min.css' />
+      {/* <link rel='stylesheet' href='assets/css/fontawesome.min.css' />
       <link rel='stylesheet' href='assets/css/nice-select.min.css' />
-      <link rel='stylesheet' href='assets/css/animate.min.css' />
+      <link rel='stylesheet' href='assets/css/animate.min.css' /> */}
       <body suppressHydrationWarning={true}>
         <BootstrapInit />
         <CustomCursor />
