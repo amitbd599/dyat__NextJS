@@ -1,3 +1,4 @@
+import BannerTwo from "@/components/BannerTwo";
 import HeaderTwo from "@/components/HeaderTwo";
 import Animation from "@/helper/Animation";
 
@@ -15,6 +16,9 @@ const page = () => {
 
       {/* HeaderTwo */}
       <HeaderTwo />
+
+      {/* BannerTwo */}
+      <BannerTwo />
     </>
   );
 };
