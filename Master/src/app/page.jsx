@@ -1,3 +1,4 @@
+import AboutAreaOne from "@/components/AboutAreaOne";
 import BannerOne from "@/components/BannerOne";
 import FeatureAreaOne from "@/components/FeatureAreaOne";
 import HeaderOne from "@/components/HeaderOne";
@@ -23,6 +24,9 @@ const page = () => {
 
       {/* TopSellerAreaOne */}
       <TopSellerAreaOne />
+
+      {/* AboutAreaOne */}
+      <AboutAreaOne />
     </>
   );
 };

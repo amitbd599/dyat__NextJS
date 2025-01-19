@@ -1,18 +1,24 @@
 "use client";
 
-import Aos from "aos";
+import { useEffect, useState } from "react";
 
-import { useEffect } from "react";
 const Animation = () => {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    Aos.init({
-      offset: 0,
-      easing: "ease",
-      once: true,
-      duration: 1200,
-    });
-    Aos.refresh();
-  }, []);
+    setIsClient(true); // Mark as client-side only
+    if (isClient) {
+      import("aos").then((Aos) => {
+        Aos.init({
+          offset: 0,
+          easing: "ease",
+          once: true,
+          duration: 1200,
+        });
+        Aos.refresh();
+      });
+    }
+  }, [isClient]);
 
   return null;
 };

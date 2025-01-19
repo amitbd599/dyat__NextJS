@@ -73,8 +73,6 @@ const HeaderOne = () => {
     setActiveMenu(activeMenu === index ? null : index);
   };
 
-  console.log(location);
-
   return (
     <>
       {/* search popup start*/}
