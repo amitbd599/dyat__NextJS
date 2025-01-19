@@ -1,18 +1,3 @@
-import AboutOne from "@/components/AboutOne";
-import BannerOne from "@/components/BannerOne";
-import BlogOne from "@/components/BlogOne";
-import BrandOne from "@/components/BrandOne";
-import CertificateOne from "@/components/CertificateOne";
-import ChooseUsOne from "@/components/ChooseUsOne";
-import CounterOne from "@/components/CounterOne";
-import ExploreCourseOne from "@/components/ExploreCourseOne";
-import FeaturesOne from "@/components/FeaturesOne";
-import FooterOne from "@/components/FooterOne";
-import HeaderOne from "@/components/HeaderOne";
-import InstructorOne from "@/components/InstructorOne";
-import TestimonialsOne from "@/components/TestimonialsOne";
-import Animation from "@/helper/Animation";
-
 export const metadata = {
   title: "EduAll  - LMS, Tutors, Education & Online Course NEXT JS Template",
   description:
@@ -20,51 +5,7 @@ export const metadata = {
 };
 
 const page = () => {
-  return (
-    <>
-      {/* HeaderOne */}
-      <HeaderOne />
-
-      {/* Animation */}
-      <Animation />
-
-      {/* BannerOne */}
-      <BannerOne />
-
-      {/* BrandOne */}
-      <BrandOne />
-
-      {/* FeaturesOne */}
-      <FeaturesOne />
-
-      {/* ExploreCourseOne */}
-      <ExploreCourseOne />
-
-      {/* AboutOne */}
-      <AboutOne />
-
-      {/* InstructorOne */}
-      <InstructorOne />
-
-      {/* CHooseUsOne */}
-      <ChooseUsOne />
-
-      {/* CounterOne */}
-      <CounterOne />
-
-      {/* TestimonialsOne */}
-      <TestimonialsOne />
-
-      {/* BlogOne */}
-      <BlogOne />
-
-      {/* CertificateOne */}
-      <CertificateOne />
-
-      {/* FooterOne */}
-      <FooterOne />
-    </>
-  );
+  return <></>;
 };
 
 export default page;

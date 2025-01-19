@@ -1,9 +1,9 @@
+import "./font.css";
+import "./globals.scss";
 import BootstrapInit from "@/helper/BootstrapInit";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
 // import LoadPhosphorIcons from "@/helper/LoadPhosphorIcons";
 
-import "./font.css";
-import "./globals.scss";
 import CustomCursor from "@/helper/CustomCursor";
 import BackToTop from "@/helper/BackToTop";
 import Animation from "@/helper/Animation";
@@ -17,6 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      {/* <link rel='stylesheet' href='assets/css/bootstrap.min.css' /> */}
+      <link rel='stylesheet' href='assets/css/fontawesome.min.css' />
+      <link rel='stylesheet' href='assets/css/nice-select.min.css' />
+      <link rel='stylesheet' href='assets/css/animate.min.css' />
       <body suppressHydrationWarning={true}>
         <BootstrapInit />
         <CustomCursor />

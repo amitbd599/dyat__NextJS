@@ -1,3 +1,6 @@
+import BannerOne from "@/components/BannerOne";
+import HeaderOne from "@/components/HeaderOne";
+
 export const metadata = {
   title: "DYAT - eSports and Gaming NFT NEXT JS Template",
   description:
@@ -5,7 +8,15 @@ export const metadata = {
 };
 
 const page = () => {
-  return <></>;
+  return (
+    <>
+      {/* HeaderOne */}
+      <HeaderOne />
+
+      {/* BannerOne */}
+      <BannerOne />
+    </>
+  );
 };
 
 export default page;

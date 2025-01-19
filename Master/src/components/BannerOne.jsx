@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BannerOne = () => {
   return (
@@ -50,7 +50,7 @@ const BannerOne = () => {
                 data-aos='fade-up'
                 data-aos-delay='700'
               >
-                <Link className='btn btn-main style-small' to='/about'>
+                <Link className='btn btn-main style-small' href='/about'>
                   <span>
                     <span>Explore More</span>
                   </span>

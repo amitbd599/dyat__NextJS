@@ -135,6 +135,10 @@
   overflow-y: hidden;
 }
 
+.sidebar-inner .sidebar-address ul li {
+  color: var(--paragraph-color);
+}
+
 .aline-flex {
   display: flex;
   align-items: center;
