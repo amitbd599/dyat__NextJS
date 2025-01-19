@@ -1,4 +1,5 @@
 import BannerOne from "@/components/BannerOne";
+import FeatureAreaOne from "@/components/FeatureAreaOne";
 import HeaderOne from "@/components/HeaderOne";
 
 export const metadata = {
@@ -15,6 +16,9 @@ const page = () => {
 
       {/* BannerOne */}
       <BannerOne />
+
+      {/* FeatureAreaOne */}
+      <FeatureAreaOne />
     </>
   );
 };

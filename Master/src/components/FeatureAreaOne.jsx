@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const FeatureAreaOne = () => {
   return (
@@ -15,7 +15,7 @@ const FeatureAreaOne = () => {
           </h2>
           <Link
             className='read-more-arrow-text d-flex align-items-center mt-md-0 mt-4'
-            to='/explore-product'
+            href='/explore-product'
           >
             Discover More
             <span>
@@ -40,9 +40,9 @@ const FeatureAreaOne = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -50,7 +50,7 @@ const FeatureAreaOne = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
@@ -73,9 +73,9 @@ const FeatureAreaOne = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -83,7 +83,7 @@ const FeatureAreaOne = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
@@ -106,9 +106,9 @@ const FeatureAreaOne = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -116,7 +116,7 @@ const FeatureAreaOne = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
@@ -139,9 +139,9 @@ const FeatureAreaOne = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -149,7 +149,7 @@ const FeatureAreaOne = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
