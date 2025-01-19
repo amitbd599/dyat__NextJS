@@ -4,6 +4,7 @@ import BlockChainGalleryAreaOne from "@/components/BlockChainGalleryAreaOne";
 import CreatorAreaOne from "@/components/CreatorAreaOne";
 import FeatureAreaOne from "@/components/FeatureAreaOne";
 import HeaderOne from "@/components/HeaderOne";
+import PartnerAreaOne from "@/components/PartnerAreaOne";
 import TestimonialAreaOne from "@/components/TestimonialAreaOne";
 import TopAuctionAreaOne from "@/components/TopAuctionAreaOne";
 import TopSellerAreaOne from "@/components/TopSellerAreaOne";
@@ -47,6 +48,9 @@ const page = () => {
 
       {/* TestimonialAreaOne */}
       <TestimonialAreaOne />
+
+      {/* PartnerAreaOne */}
+      <PartnerAreaOne />
     </>
   );
 };
