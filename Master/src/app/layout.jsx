@@ -1,4 +1,7 @@
 import "./font.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 import "./globals.scss";
 import BootstrapInit from "@/helper/BootstrapInit";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";

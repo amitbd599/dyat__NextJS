@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const HeaderOne = () => {
   const [scroll, setScroll] = useState(false);
-  const location = useRouter();
+  const location = usePathname();
   useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset < 150) {
@@ -73,6 +73,8 @@ const HeaderOne = () => {
     setActiveMenu(activeMenu === index ? null : index);
   };
 
+  console.log(location);
+
   return (
     <>
       {/* search popup start*/}
@@ -124,7 +126,7 @@ const HeaderOne = () => {
               <li className='menu-item-has-children'>
                 <Link
                   className={
-                    ["/", "/index-2", "/index-3"].includes(location.pathname)
+                    ["/", "/index-2", "/index-3"].includes(location)
                       ? "active"
                       : ""
                   }
@@ -135,9 +137,7 @@ const HeaderOne = () => {
                 <ul className='sub-menu'>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/" ? "current" : ""}
                       href='/'
                     >
                       Home 01
@@ -146,9 +146,7 @@ const HeaderOne = () => {
                   <li>
                     <Link
                       href='/index-2'
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/index-2" ? "current" : ""}
                     >
                       Home 02
                     </Link>
@@ -156,9 +154,7 @@ const HeaderOne = () => {
                   <li>
                     <Link
                       href='/index-3'
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/index-3" ? "current" : ""}
                     >
                       Home 03
                     </Link>
@@ -191,20 +187,18 @@ const HeaderOne = () => {
                 <ul className='sub-menu'>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
                       href='/tournament'
+                      className={location === "/tournament" ? "current" : ""}
                     >
                       Tournament
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
                       href='/tournament-details'
+                      className={
+                        location === "/tournament-details" ? "current" : ""
+                      }
                     >
                       Tournament Details
                     </Link>
@@ -220,7 +214,7 @@ const HeaderOne = () => {
                       "/explore-product",
                       "/cart",
                       "/checkout",
-                    ].includes(location.pathname)
+                    ].includes(location)
                       ? "active"
                       : ""
                   }
@@ -231,9 +225,7 @@ const HeaderOne = () => {
                 <ul className='sub-menu'>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/shop" ? "current" : ""}
                       href='/shop'
                     >
                       Shop
@@ -241,9 +233,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/shop-details" ? "current" : ""}
                       href='/shop-details'
                     >
                       Shop Details
@@ -251,8 +241,8 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                      className={
+                        location === "/explore-product" ? "current" : ""
                       }
                       href='/explore-product'
                     >
@@ -261,9 +251,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/cart" ? "current" : ""}
                       href='/cart'
                     >
                       Cart
@@ -271,9 +259,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/checkout" ? "current" : ""}
                       href='/checkout'
                     >
                       Checkout
@@ -301,7 +287,7 @@ const HeaderOne = () => {
                       "/login",
                       "/wallet",
                       "/error",
-                    ].includes(location.pathname)
+                    ].includes(location)
                       ? "active"
                       : ""
                   }
@@ -312,9 +298,7 @@ const HeaderOne = () => {
                 <ul className='sub-menu'>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/blog" ? "current" : ""}
                       href='/blog'
                     >
                       Blog
@@ -322,9 +306,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/blog-list" ? "current" : ""}
                       href='/blog-list'
                     >
                       Blog List
@@ -332,9 +314,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/blog-grid" ? "current" : ""}
                       href='/blog-grid'
                     >
                       Blog Grid
@@ -342,9 +322,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/blog-details" ? "current" : ""}
                       href='/blog-details'
                     >
                       Blog Details
@@ -352,9 +330,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/create-item" ? "current" : ""}
                       href='/create-item'
                     >
                       Create Items
@@ -362,9 +338,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/creators" ? "current" : ""}
                       href='/creators'
                     >
                       Creators
@@ -372,8 +346,8 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                      className={
+                        location === "/creator-details" ? "current" : ""
                       }
                       href='/creator-details'
                     >
@@ -382,9 +356,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/service" ? "current" : ""}
                       href='/service'
                     >
                       service
@@ -392,8 +364,8 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                      className={
+                        location === "/service-details" ? "current" : ""
                       }
                       href='/service-details'
                     >
@@ -402,9 +374,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/team" ? "current" : ""}
                       href='/team'
                     >
                       team
@@ -412,9 +382,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/team-details" ? "current" : ""}
                       href='/team-details'
                     >
                       team Details
@@ -422,9 +390,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/auction" ? "current" : ""}
                       href='/auction'
                     >
                       Auction
@@ -432,9 +398,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/help-center" ? "current" : ""}
                       href='/help-center'
                     >
                       Help Center
@@ -442,9 +406,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/login" ? "current" : ""}
                       href='/login'
                     >
                       Login
@@ -452,9 +414,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/wallet" ? "current" : ""}
                       href='/wallet'
                     >
                       Wallet
@@ -462,9 +422,7 @@ const HeaderOne = () => {
                   </li>
                   <li>
                     <Link
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                      className={location === "/error" ? "current" : ""}
                       href='/error'
                     >
                       404
@@ -474,7 +432,7 @@ const HeaderOne = () => {
               </li>
               <li>
                 <Link
-                  className={location.pathname === "/contact" ? "active" : ""}
+                  className={location === "/contact" ? "current" : ""}
                   href='/contact'
                 >
                   Contact Us
