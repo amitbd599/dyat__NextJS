@@ -3,6 +3,7 @@ import BannerOne from "@/components/BannerOne";
 import BlockChainGalleryAreaOne from "@/components/BlockChainGalleryAreaOne";
 import CreatorAreaOne from "@/components/CreatorAreaOne";
 import FeatureAreaOne from "@/components/FeatureAreaOne";
+import FooterOne from "@/components/FooterOne";
 import HeaderOne from "@/components/HeaderOne";
 import PartnerAreaOne from "@/components/PartnerAreaOne";
 import TestimonialAreaOne from "@/components/TestimonialAreaOne";
@@ -51,6 +52,9 @@ const page = () => {
 
       {/* PartnerAreaOne */}
       <PartnerAreaOne />
+
+      {/* FooterOne */}
+      <FooterOne />
     </>
   );
 };
