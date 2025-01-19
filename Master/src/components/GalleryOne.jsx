@@ -1,6 +1,8 @@
+"use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
-import { Link } from "react-router-dom";
+
 const GalleryOne = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -21,7 +23,7 @@ const GalleryOne = () => {
               <div className='col-lg-4 align-self-center'>
                 <div className='border-left-5px ps-5'>
                   <button
-                    to='#'
+                    href='#'
                     onClick={() => setIsOpen(true)}
                     className='video-play-btn me-3 video-play-btn-hover'
                   >
@@ -38,7 +40,7 @@ const GalleryOne = () => {
         <div className='row'>
           <div className='col-lg-2 col-sm-6 px-2'>
             <div className='thumb'>
-              <Link to='/tournament-details'>
+              <Link href='/tournament-details'>
                 <img
                   className='w-100'
                   src='assets/img/gallery-2/1.png'
@@ -47,7 +49,7 @@ const GalleryOne = () => {
               </Link>
             </div>
             <div className='thumb'>
-              <Link to='/tournament-details'>
+              <Link href='/tournament-details'>
                 <img
                   className='w-100'
                   src='assets/img/gallery-2/2.png'
@@ -58,7 +60,7 @@ const GalleryOne = () => {
           </div>
           <div className='col-lg-2 col-sm-6 order-lg-3 px-2'>
             <div className='thumb'>
-              <Link to='/tournament-details'>
+              <Link href='/tournament-details'>
                 <img
                   className='w-100'
                   src='assets/img/gallery-2/4.png'
@@ -67,7 +69,7 @@ const GalleryOne = () => {
               </Link>
             </div>
             <div className='thumb'>
-              <Link to='/tournament-details'>
+              <Link href='/tournament-details'>
                 <img
                   className='w-100'
                   src='assets/img/gallery-2/5.png'
@@ -78,7 +80,7 @@ const GalleryOne = () => {
           </div>
           <div className='col-lg-6 col-sm-6 order-lg-2 px-2'>
             <div className='thumb'>
-              <Link to='/tournament-details'>
+              <Link href='/tournament-details'>
                 <img
                   className='w-100'
                   src='assets/img/gallery-2/3.png'
@@ -89,7 +91,7 @@ const GalleryOne = () => {
           </div>
           <div className='col-lg-2 col-sm-6 order-lg-4 px-2'>
             <div className='thumb'>
-              <Link to='/tournament-details'>
+              <Link href='/tournament-details'>
                 <img
                   className='w-100'
                   src='assets/img/gallery-2/6.png'
