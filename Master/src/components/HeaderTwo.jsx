@@ -1,9 +1,12 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const HeaderTwo = () => {
   const [scroll, setScroll] = useState(false);
-  const location = useLocation();
+  const location = usePathname();
   useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset < 150) {
@@ -113,7 +116,7 @@ const HeaderTwo = () => {
             </button>
           </div>
           <div className='logo'>
-            <Link to='/'>
+            <Link href='/'>
               <img src='assets/img/logo.png' alt='img' />
             </Link>
           </div>
@@ -122,50 +125,44 @@ const HeaderTwo = () => {
               <li className='menu-item-has-children'>
                 <Link
                   className={
-                    ["/", "/index-2", "/index-3"].includes(location.pathname)
+                    ["/", "/index-2", "/index-3"].includes(location)
                       ? "active"
                       : ""
                   }
-                  to='#'
+                  href='#'
                 >
                   Home
                 </Link>
                 <ul className='sub-menu'>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/'
+                    <Link
+                      className={location === "/" ? "current" : ""}
+                      href='/'
                     >
                       Home 01
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      to='/index-2'
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                    <Link
+                      href='/index-2'
+                      className={location === "/index-2" ? "current" : ""}
                     >
                       Home 02
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      to='/index-3'
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
+                    <Link
+                      href='/index-3'
+                      className={location === "/index-3" ? "current" : ""}
                     >
                       Home 03
-                    </NavLink>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li>
                 <Link
-                  to='/about'
+                  href='/about'
                   className={
                     ["/about"].includes(location.pathname) ? "active" : ""
                   }
@@ -182,30 +179,28 @@ const HeaderTwo = () => {
                       ? "active"
                       : ""
                   }
-                  to='#'
+                  href='#'
                 >
                   Tournament
                 </Link>
                 <ul className='sub-menu'>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/tournament'
+                    <Link
+                      href='/tournament'
+                      className={location === "/tournament" ? "current" : ""}
                     >
                       Tournament
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                    <Link
+                      href='/tournament-details'
+                      className={
+                        location === "/tournament-details" ? "current" : ""
                       }
-                      to='/tournament-details'
                     >
                       Tournament Details
-                    </NavLink>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -218,64 +213,56 @@ const HeaderTwo = () => {
                       "/explore-product",
                       "/cart",
                       "/checkout",
-                    ].includes(location.pathname)
+                    ].includes(location)
                       ? "active"
                       : ""
                   }
-                  to='#'
+                  href='#'
                 >
                   Shop
                 </Link>
                 <ul className='sub-menu'>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/shop'
+                    <Link
+                      className={location === "/shop" ? "current" : ""}
+                      href='/shop'
                     >
                       Shop
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/shop-details'
+                    <Link
+                      className={location === "/shop-details" ? "current" : ""}
+                      href='/shop-details'
                     >
                       Shop Details
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                    <Link
+                      className={
+                        location === "/explore-product" ? "current" : ""
                       }
-                      to='/explore-product'
+                      href='/explore-product'
                     >
                       Explore product
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/cart'
+                    <Link
+                      className={location === "/cart" ? "current" : ""}
+                      href='/cart'
                     >
                       Cart
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/checkout'
+                    <Link
+                      className={location === "/checkout" ? "current" : ""}
+                      href='/checkout'
                     >
                       Checkout
-                    </NavLink>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -299,181 +286,153 @@ const HeaderTwo = () => {
                       "/login",
                       "/wallet",
                       "/error",
-                    ].includes(location.pathname)
+                    ].includes(location)
                       ? "active"
                       : ""
                   }
-                  to='#'
+                  href='#'
                 >
                   Pages
                 </Link>
                 <ul className='sub-menu'>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/blog'
+                    <Link
+                      className={location === "/blog" ? "current" : ""}
+                      href='/blog'
                     >
                       Blog
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/blog-list'
+                    <Link
+                      className={location === "/blog-list" ? "current" : ""}
+                      href='/blog-list'
                     >
                       Blog List
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/blog-grid'
+                    <Link
+                      className={location === "/blog-grid" ? "current" : ""}
+                      href='/blog-grid'
                     >
                       Blog Grid
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/blog-details'
+                    <Link
+                      className={location === "/blog-details" ? "current" : ""}
+                      href='/blog-details'
                     >
                       Blog Details
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/create-item'
+                    <Link
+                      className={location === "/create-item" ? "current" : ""}
+                      href='/create-item'
                     >
                       Create Items
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/creators'
+                    <Link
+                      className={location === "/creators" ? "current" : ""}
+                      href='/creators'
                     >
                       Creators
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                    <Link
+                      className={
+                        location === "/creator-details" ? "current" : ""
                       }
-                      to='/creator-details'
+                      href='/creator-details'
                     >
                       Creator details
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/service'
+                    <Link
+                      className={location === "/service" ? "current" : ""}
+                      href='/service'
                     >
                       service
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
+                    <Link
+                      className={
+                        location === "/service-details" ? "current" : ""
                       }
-                      to='/service-details'
+                      href='/service-details'
                     >
                       Service Details
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/team'
+                    <Link
+                      className={location === "/team" ? "current" : ""}
+                      href='/team'
                     >
                       team
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/team-details'
+                    <Link
+                      className={location === "/team-details" ? "current" : ""}
+                      href='/team-details'
                     >
                       team Details
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/auction'
+                    <Link
+                      className={location === "/auction" ? "current" : ""}
+                      href='/auction'
                     >
                       Auction
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/help-center'
+                    <Link
+                      className={location === "/help-center" ? "current" : ""}
+                      href='/help-center'
                     >
                       Help Center
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/login'
+                    <Link
+                      className={location === "/login" ? "current" : ""}
+                      href='/login'
                     >
                       Login
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/wallet'
+                    <Link
+                      className={location === "/wallet" ? "current" : ""}
+                      href='/wallet'
                     >
                       Wallet
-                    </NavLink>
+                    </Link>
                   </li>
                   <li>
-                    <NavLink
-                      className={(navData) =>
-                        navData.isActive ? "current" : ""
-                      }
-                      to='/error'
+                    <Link
+                      className={location === "/error" ? "current" : ""}
+                      href='/error'
                     >
                       404
-                    </NavLink>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li>
                 <Link
-                  className={location.pathname === "/contact" ? "active" : ""}
-                  to='/contact'
+                  className={location === "/contact" ? "current" : ""}
+                  href='/contact'
                 >
                   Contact Us
                 </Link>
@@ -497,7 +456,7 @@ const HeaderTwo = () => {
                 </svg>
               </button>
             </div>
-            <Link className='header-cart' to='/cart'>
+            <Link className='header-cart' href='/cart'>
               <svg
                 width={24}
                 height={24}
@@ -532,7 +491,7 @@ const HeaderTwo = () => {
                   />
                 </svg>
               </button>
-              <Link className='btn btn-main style-small' to='#'>
+              <Link className='btn btn-main style-small' href='#'>
                 <span>
                   <span>
                     <img src='assets/img/btn-arrow.png' alt='img' />~
@@ -599,22 +558,22 @@ const HeaderTwo = () => {
             </div>
             <ul className='social-media social-media-light'>
               <li>
-                <Link to='#'>
+                <Link href='#'>
                   <i className='fab fa-facebook-f' />
                 </Link>
               </li>
               <li>
-                <Link to='#'>
+                <Link href='#'>
                   <i className='fab fa-twitter' />
                 </Link>
               </li>
               <li>
-                <Link to='#'>
+                <Link href='#'>
                   <i className='fab fa-instagram' />
                 </Link>
               </li>
               <li>
-                <Link to='#'>
+                <Link href='#'>
                   <i className='fab fa-pinterest' />
                 </Link>
               </li>
@@ -648,7 +607,7 @@ const HeaderTwo = () => {
 
           {/* Logo */}
           <div className='logo'>
-            <Link to='/'>
+            <Link href='/'>
               <img src='assets/img/logo.png' alt='Logo' />
             </Link>
           </div>
@@ -667,7 +626,7 @@ const HeaderTwo = () => {
                 }`}
               >
                 <Link
-                  to='#'
+                  href='#'
                   onClick={(e) => {
                     e.preventDefault();
                     handleSubMenuToggle(0);
@@ -680,19 +639,19 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 0 ? "block" : "none" }}
                 >
                   <li>
-                    <Link to='/'>Home 01</Link>
+                    <Link href='/'>Home 01</Link>
                   </li>
                   <li>
-                    <Link to='/index-2'>Home 02</Link>
+                    <Link href='/index-2'>Home 02</Link>
                   </li>
                   <li>
-                    <Link to='/index-3'>Home 03</Link>
+                    <Link href='/index-3'>Home 03</Link>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <Link to='/about'>About Us</Link>
+                <Link href='/about'>About Us</Link>
               </li>
 
               <li
@@ -701,7 +660,7 @@ const HeaderTwo = () => {
                 }`}
               >
                 <Link
-                  to='#'
+                  href='#'
                   onClick={(e) => {
                     e.preventDefault();
                     handleSubMenuToggle(1);
@@ -714,10 +673,10 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 1 ? "block" : "none" }}
                 >
                   <li>
-                    <Link to='/tournament'>Tournament</Link>
+                    <Link href='/tournament'>Tournament</Link>
                   </li>
                   <li>
-                    <Link to='/tournament-details'>Tournament Details</Link>
+                    <Link href='/tournament-details'>Tournament Details</Link>
                   </li>
                 </ul>
               </li>
@@ -728,7 +687,7 @@ const HeaderTwo = () => {
                 }`}
               >
                 <Link
-                  to='#'
+                  href='#'
                   onClick={(e) => {
                     e.preventDefault();
                     handleSubMenuToggle(2);
@@ -741,19 +700,19 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 2 ? "block" : "none" }}
                 >
                   <li>
-                    <Link to='/shop'>Shop</Link>
+                    <Link href='/shop'>Shop</Link>
                   </li>
                   <li>
-                    <Link to='/shop-details'>Shop Details</Link>
+                    <Link href='/shop-details'>Shop Details</Link>
                   </li>
                   <li>
-                    <Link to='/explore-product'>Explore Product</Link>
+                    <Link href='/explore-product'>Explore Product</Link>
                   </li>
                   <li>
-                    <Link to='/cart'>Cart</Link>
+                    <Link href='/cart'>Cart</Link>
                   </li>
                   <li>
-                    <Link to='/checkout'>Checkout</Link>
+                    <Link href='/checkout'>Checkout</Link>
                   </li>
                 </ul>
               </li>
@@ -764,7 +723,7 @@ const HeaderTwo = () => {
                 }`}
               >
                 <Link
-                  to='#'
+                  href='#'
                   onClick={(e) => {
                     e.preventDefault();
                     handleSubMenuToggle(3);
@@ -777,19 +736,19 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 3 ? "block" : "none" }}
                 >
                   <li>
-                    <Link to='/blog'>Blog</Link>
+                    <Link href='/blog'>Blog</Link>
                   </li>
                   <li>
-                    <Link to='/blog-details'>Blog Details</Link>
+                    <Link href='/blog-details'>Blog Details</Link>
                   </li>
                   <li>
-                    <Link to='/service'>Service</Link>
+                    <Link href='/service'>Service</Link>
                   </li>
                   <li>
-                    <Link to='/team'>Team</Link>
+                    <Link href='/team'>Team</Link>
                   </li>
                   <li>
-                    <Link to='/contact'>Contact Us</Link>
+                    <Link href='/contact'>Contact Us</Link>
                   </li>
                 </ul>
               </li>
@@ -819,7 +778,7 @@ const HeaderTwo = () => {
               </button>
             </div>
 
-            <Link className='header-cart' to='/cart'>
+            <Link className='header-cart' href='/cart'>
               <svg
                 width='24'
                 height='24'
