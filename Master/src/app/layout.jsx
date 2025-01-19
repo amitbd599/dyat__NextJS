@@ -2,6 +2,7 @@ import "./font.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import "aos/dist/aos.css";
 import "./globals.scss";
 import BootstrapInit from "@/helper/BootstrapInit";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
@@ -9,7 +10,6 @@ import RouteScrollToTop from "@/helper/RouteScrollToTop";
 
 import CustomCursor from "@/helper/CustomCursor";
 import BackToTop from "@/helper/BackToTop";
-import Animation from "@/helper/Animation";
 
 export const metadata = {
   title: "EduAll  - LMS, Tutors, Education & Online Course NEXT JS Template",
@@ -20,15 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      {/* <link rel='stylesheet' href='assets/css/bootstrap.min.css' /> */}
-      {/* <link rel='stylesheet' href='assets/css/fontawesome.min.css' />
-      <link rel='stylesheet' href='assets/css/nice-select.min.css' />
-      <link rel='stylesheet' href='assets/css/animate.min.css' /> */}
       <body suppressHydrationWarning={true}>
         <BootstrapInit />
         <CustomCursor />
         <BackToTop />
-        <Animation />
         {/* <LoadPhosphorIcons /> */}
 
         <RouteScrollToTop />

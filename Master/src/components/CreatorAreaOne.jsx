@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CreatorAreaOne = () => {
   return (
@@ -32,7 +32,7 @@ const CreatorAreaOne = () => {
               data-aos-delay='300'
             >
               <div className='btn-box d-inline-block'>
-                <Link className='btn btn-main style-small' to='/about'>
+                <Link className='btn btn-main style-small' href='/about'>
                   <span>
                     <span>Explore More</span>
                   </span>

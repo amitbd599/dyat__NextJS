@@ -1,3 +1,7 @@
+body {
+  overflow-x: visible !important;
+}
+
 .navbar.main {
   display: block;
   @media #{$md} {
