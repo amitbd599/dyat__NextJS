@@ -2,6 +2,7 @@ import AboutAreaOne from "@/components/AboutAreaOne";
 import BannerOne from "@/components/BannerOne";
 import FeatureAreaOne from "@/components/FeatureAreaOne";
 import HeaderOne from "@/components/HeaderOne";
+import TopAuctionAreaOne from "@/components/TopAuctionAreaOne";
 import TopSellerAreaOne from "@/components/TopSellerAreaOne";
 
 export const metadata = {
@@ -27,6 +28,9 @@ const page = () => {
 
       {/* AboutAreaOne */}
       <AboutAreaOne />
+
+      {/* TopAuctionAreaOne */}
+      <TopAuctionAreaOne />
     </>
   );
 };

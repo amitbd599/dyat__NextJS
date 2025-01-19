@@ -1,5 +1,7 @@
+"use client";
+import Link from "next/link";
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+
 import Slider from "react-slick";
 
 const TopAuctionAreaOne = () => {
@@ -95,13 +97,13 @@ const TopAuctionAreaOne = () => {
                   </div>
                   <div className='details'>
                     <h5 className='product-item__wishlist tt-uppercase d-flex justify-content-between align-items-center mb-3'>
-                      <Link to='/creator-details'>Lune Studio</Link>
+                      <Link href='/creator-details'>Lune Studio</Link>
                       <i className='fas fa-heart' />
                     </h5>
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='/creator-details' className='bid'>
+                        <Link href='/creator-details' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -111,7 +113,7 @@ const TopAuctionAreaOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
@@ -127,13 +129,13 @@ const TopAuctionAreaOne = () => {
                   </div>
                   <div className='details'>
                     <h5 className='product-item__wishlist tt-uppercase d-flex justify-content-between align-items-center mb-3'>
-                      <Link to='/creator-details'>Aune Studio</Link>
+                      <Link href='/creator-details'>Aune Studio</Link>
                       <i className='fas fa-heart' />
                     </h5>
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='/creator-details' className='bid'>
+                        <Link href='/creator-details' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -143,7 +145,7 @@ const TopAuctionAreaOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
@@ -159,13 +161,13 @@ const TopAuctionAreaOne = () => {
                   </div>
                   <div className='details'>
                     <h5 className='product-item__wishlist tt-uppercase d-flex justify-content-between align-items-center mb-3'>
-                      <Link to='/creator-details'>Quae Studio</Link>
+                      <Link href='/creator-details'>Quae Studio</Link>
                       <i className='fas fa-heart' />
                     </h5>
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='/creator-details' className='bid'>
+                        <Link href='/creator-details' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -175,7 +177,7 @@ const TopAuctionAreaOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
@@ -191,13 +193,13 @@ const TopAuctionAreaOne = () => {
                   </div>
                   <div className='details'>
                     <h5 className='product-item__wishlist tt-uppercase d-flex justify-content-between align-items-center mb-3'>
-                      <Link to='/creator-details'>Lune Studio</Link>
+                      <Link href='/creator-details'>Lune Studio</Link>
                       <i className='fas fa-heart' />
                     </h5>
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='/creator-details' className='bid'>
+                        <Link href='/creator-details' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -207,7 +209,7 @@ const TopAuctionAreaOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
