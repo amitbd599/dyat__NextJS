@@ -3,6 +3,7 @@ import BannerThree from "@/components/BannerThree";
 import GalleryTwo from "@/components/GalleryTwo";
 import HeaderThree from "@/components/HeaderThree";
 import RoadmapOne from "@/components/RoadmapOne";
+import TopAdvisorsTwo from "@/components/TopAdvisorsTwo";
 import TournamentOne from "@/components/TournamentOne";
 import Animation from "@/helper/Animation";
 
@@ -35,6 +36,9 @@ const page = () => {
 
       {/* RoadmapOne */}
       <RoadmapOne />
+
+      {/* TopAdvisorsTwo */}
+      <TopAdvisorsTwo />
     </>
   );
 };
