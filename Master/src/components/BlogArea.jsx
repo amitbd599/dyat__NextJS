@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BlogArea = () => {
   return (
@@ -13,10 +13,10 @@ const BlogArea = () => {
               </div>
               <div className='details p-0'>
                 <div className='cat'>
-                  <Link to='#'>Victory</Link>
+                  <Link href='#'>Victory</Link>
                 </div>
                 <h2 className='title'>
-                  <Link to='/blog-details'>THE FIRST WEB3 GAME like</Link>
+                  <Link href='/blog-details'>THE FIRST WEB3 GAME like</Link>
                 </h2>
                 <ul className='blog-meta'>
                   <li>
@@ -34,7 +34,7 @@ const BlogArea = () => {
                   outecon secture’ar inner deauty with our essential infused
                   include hits like have the best online games.
                 </p>
-                <Link className='read-more-text mt-3' to='/blog-details'>
+                <Link className='read-more-text mt-3' href='/blog-details'>
                   Read More <i className='fas fa-angle-double-right pt-1' />
                 </Link>
               </div>
@@ -45,7 +45,7 @@ const BlogArea = () => {
               </div>
               <div className='details p-0'>
                 <div className='cat'>
-                  <Link to='#'>Victory</Link>
+                  <Link href='#'>Victory</Link>
                 </div>
                 <ul className='blog-meta'>
                   <li>
@@ -56,7 +56,7 @@ const BlogArea = () => {
                   </li>
                 </ul>
                 <h2 className='title'>
-                  <Link to='/blog-details'>
+                  <Link href='/blog-details'>
                     Successful Agricultural Guide to Running Beginner
                   </Link>
                 </h2>
@@ -65,7 +65,7 @@ const BlogArea = () => {
                   posuere viverra .Aliquam eros justo, posuere Aliquam eros
                   justo, posuere loborti viverra laoreet matti ullamcorper
                 </p>
-                <Link className='btn btn-base mt-3' to='/service-details'>
+                <Link className='btn btn-base mt-3' href='/service-details'>
                   Read More <i className='fa fa-arrow-right ' />
                 </Link>
               </div>
@@ -76,7 +76,7 @@ const BlogArea = () => {
               </div>
               <div className='details p-0'>
                 <div className='cat'>
-                  <Link to='#'>Victory</Link>
+                  <Link href='#'>Victory</Link>
                 </div>
                 <ul className='blog-meta'>
                   <li>
@@ -87,7 +87,7 @@ const BlogArea = () => {
                   </li>
                 </ul>
                 <h2 className='title'>
-                  <Link to='/blog-details'>
+                  <Link href='/blog-details'>
                     A Beginner's Guide to Running a Successful Agricultural
                   </Link>
                 </h2>
@@ -96,23 +96,23 @@ const BlogArea = () => {
                   posuere viverra .Aliquam eros justo, posuere Aliquam eros
                   justo, posuere loborti viverra laoreet matti ullamcorper
                 </p>
-                <Link className='btn btn-base mt-3' to='/service-details'>
+                <Link className='btn btn-base mt-3' href='/service-details'>
                   Read More <i className='fa fa-arrow-right' />
                 </Link>
               </div>
             </div>
             <div className='pagination'>
-              <Link className='prev page-numbers' to='#'>
+              <Link className='prev page-numbers' href='#'>
                 <i className='fa fa-angle-left' />
               </Link>
-              <Link className='page-numbers' to='#'>
+              <Link className='page-numbers' href='#'>
                 1
               </Link>
               <span className='page-numbers current'>2</span>
-              <Link className='page-numbers' to='#'>
+              <Link className='page-numbers' href='#'>
                 3
               </Link>
-              <Link className='next page-numbers' to='#'>
+              <Link className='next page-numbers' href='#'>
                 <i className='fa fa-angle-right' />
               </Link>
             </div>
@@ -140,31 +140,31 @@ const BlogArea = () => {
                 <h4 className='widget-title'>Catagory</h4>
                 <ul className='catagory-items'>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Business{" "}
                       <span>3</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Finance{" "}
                       <span>7</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Web Design{" "}
                       <span>2</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Counsiling{" "}
                       <span>3</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> IT Service{" "}
                       <span>5</span>
                     </Link>
@@ -181,7 +181,7 @@ const BlogArea = () => {
                       </div>
                       <div className='media-body align-self-center'>
                         <h6 className='title'>
-                          <Link to='/blog-details'>THE FIRST WEB3 GAME</Link>
+                          <Link href='/blog-details'>THE FIRST WEB3 GAME</Link>
                         </h6>
                         <div className='post-info'>
                           <i className='far fa-calendar-alt' />
@@ -197,7 +197,7 @@ const BlogArea = () => {
                       </div>
                       <div className='media-body align-self-center'>
                         <h6 className='title'>
-                          <Link to='/blog-details'>
+                          <Link href='/blog-details'>
                             Startup Ideas for Digital Design
                           </Link>
                         </h6>
@@ -215,7 +215,7 @@ const BlogArea = () => {
                       </div>
                       <div className='media-body align-self-center'>
                         <h6 className='title'>
-                          <Link to='/blog-details'>
+                          <Link href='/blog-details'>
                             ACROSS MOBILE or PC game!
                           </Link>
                         </h6>
@@ -231,10 +231,10 @@ const BlogArea = () => {
               <div className='widget widget_tag_cloud mb-0'>
                 <h4 className='widget-title'>Tags</h4>
                 <div className='tagcloud'>
-                  <Link to='#'>Crazy Games</Link>
-                  <Link to='#'>Post Type</Link>
-                  <Link to='#'>Who Stickman Hook </Link>
-                  <Link to='#'>Playhop</Link>
+                  <Link href='#'>Crazy Games</Link>
+                  <Link href='#'>Post Type</Link>
+                  <Link href='#'>Who Stickman Hook </Link>
+                  <Link href='#'>Playhop</Link>
                 </div>
               </div>
             </div>
