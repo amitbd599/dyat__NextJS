@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BlogInner = () => {
   return (
@@ -22,7 +22,7 @@ const BlogInner = () => {
                 </div>
                 <div className='details p-0'>
                   <div className='cat pt-2'>
-                    <Link to='#'>Victory</Link>
+                    <Link href='#'>Victory</Link>
                   </div>
                   <ul className='blog-meta'>
                     <li>
@@ -33,7 +33,7 @@ const BlogInner = () => {
                     </li>
                   </ul>
                   <h2 className='title'>
-                    <Link to='/blog-details'>FIRST 4 MAPS ARE READY!</Link>
+                    <Link href='/blog-details'>FIRST 4 MAPS ARE READY!</Link>
                   </h2>
                   <p>
                     Do think your skin should look and refhed matted Nourish
@@ -60,7 +60,7 @@ const BlogInner = () => {
                     </p>
                   </blockquote>
                   <h4 className='title'>
-                    <Link to='/blog-details'>
+                    <Link href='/blog-details'>
                       play high-quality browser games
                     </Link>
                   </h4>
@@ -95,24 +95,24 @@ const BlogInner = () => {
                   <div className='tag-and-share d-flex justify-content-between'>
                     <div className='tags'>
                       <strong>Tag : </strong>
-                      <Link to='#'>Crazy Game, </Link>
-                      <Link to='#'>Post Type</Link>
+                      <Link href='#'>Crazy Game, </Link>
+                      <Link href='#'>Post Type</Link>
                     </div>
                     <div className='blog-share'>
                       <strong>Share : </strong>
                       <ul>
                         <li>
-                          <Link to='#'>
+                          <Link href='#'>
                             <i className='fab fa-twitter' />
                           </Link>
                         </li>
                         <li>
-                          <Link to='#'>
+                          <Link href='#'>
                             <i className='fab fa-linkedin' />
                           </Link>
                         </li>
                         <li>
-                          <Link to='#'>
+                          <Link href='#'>
                             <i className='fab fa-instagram' />
                           </Link>
                         </li>
@@ -132,13 +132,13 @@ const BlogInner = () => {
                     your outecon secture’arew inner deauty hits like
                   </p>
                   <div className='social me-2'>
-                    <Link className='me-2' to='#'>
+                    <Link className='me-2' href='#'>
                       <i className='fab fa-twitter' />
                     </Link>
-                    <Link className='me-2' to='#'>
+                    <Link className='me-2' href='#'>
                       <i className='fab fa-linkedin' />
                     </Link>
-                    <Link className='me-2' to='#'>
+                    <Link className='me-2' href='#'>
                       <i className='fab fa-instagram' />
                     </Link>
                   </div>
@@ -158,7 +158,7 @@ const BlogInner = () => {
                             src='assets/img/blog/author.png'
                           />
                           <Link
-                            to='#'
+                            href='#'
                             rel='external nofollow ugc'
                             className='url fw-600  tt-uppercase me-2'
                           >
@@ -179,7 +179,7 @@ const BlogInner = () => {
                         <Link
                           rel='nofollow'
                           className='comment-reply-link'
-                          to='#'
+                          href='#'
                         >
                           Reply <i className='fa fa-reply' />
                         </Link>
@@ -196,7 +196,7 @@ const BlogInner = () => {
                             src='assets/img/blog/author2.png'
                           />
                           <Link
-                            to='/http://example.org/'
+                            href='/http://example.org/'
                             rel='external nofollow ugc'
                             className='url fw-600 tt-uppercase me-2'
                           >
@@ -217,7 +217,7 @@ const BlogInner = () => {
                         <Link
                           rel='nofollow'
                           className='comment-reply-link'
-                          to='#'
+                          href='#'
                         >
                           Reply <i className='fa fa-reply' />
                         </Link>
@@ -283,31 +283,31 @@ const BlogInner = () => {
                 <h4 className='widget-title'>Catagory</h4>
                 <ul className='catagory-items'>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Business{" "}
                       <span>3</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Finance{" "}
                       <span>7</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Web Design{" "}
                       <span>2</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> Counsiling{" "}
                       <span>3</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
+                    <Link href='/blog'>
                       <i className='fas fa-caret-right' /> IT Service{" "}
                       <span>5</span>
                     </Link>
@@ -324,7 +324,7 @@ const BlogInner = () => {
                       </div>
                       <div className='media-body align-self-center'>
                         <h6 className='title'>
-                          <Link to='/blog-details'>THE FIRST WEB3 GAME</Link>
+                          <Link href='/blog-details'>THE FIRST WEB3 GAME</Link>
                         </h6>
                         <div className='post-info'>
                           <i className='far fa-calendar-alt' />
@@ -340,7 +340,7 @@ const BlogInner = () => {
                       </div>
                       <div className='media-body align-self-center'>
                         <h6 className='title'>
-                          <Link to='/blog-details'>
+                          <Link href='/blog-details'>
                             Startup Ideas for Digital Design
                           </Link>
                         </h6>
@@ -358,7 +358,7 @@ const BlogInner = () => {
                       </div>
                       <div className='media-body align-self-center'>
                         <h6 className='title'>
-                          <Link to='/blog-details'>
+                          <Link href='/blog-details'>
                             ACROSS MOBILE or PC game!
                           </Link>
                         </h6>
@@ -374,10 +374,10 @@ const BlogInner = () => {
               <div className='widget widget_tag_cloud mb-0'>
                 <h4 className='widget-title'>Tags</h4>
                 <div className='tagcloud'>
-                  <Link to='#'>Crazy Games</Link>
-                  <Link to='#'>Post Type</Link>
-                  <Link to='#'>Who Stickman Hook </Link>
-                  <Link to='#'>Playhop</Link>
+                  <Link href='#'>Crazy Games</Link>
+                  <Link href='#'>Post Type</Link>
+                  <Link href='#'>Who Stickman Hook </Link>
+                  <Link href='#'>Playhop</Link>
                 </div>
               </div>
             </div>

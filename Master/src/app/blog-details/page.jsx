@@ -1,5 +1,5 @@
+import BlogInner from "@/components/BlogInner";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
-import CreatorDetails from "@/components/CreatorDetails";
 import FooterOne from "@/components/FooterOne";
 import HeaderTwo from "@/components/HeaderTwo";
 import Animation from "@/helper/Animation";
@@ -20,10 +20,10 @@ const page = () => {
       <HeaderTwo />
 
       {/* BreadcrumbOne */}
-      <BreadcrumbOne title='Explore' theme='Auction' inner='Auction' />
+      <BreadcrumbOne title='latest' theme='News' inner='Blog Details' />
 
-      {/* CreatorDetails */}
-      <CreatorDetails />
+      {/* BlogInner */}
+      <BlogInner />
 
       {/* FooterOne */}
       <FooterOne />
