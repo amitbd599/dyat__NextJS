@@ -1,7 +1,8 @@
+"use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper/modules";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const ProductDetailsInner = () => {
   const [thumbsSwiper, setThumbsSwiper] = React.useState(null);
@@ -129,22 +130,22 @@ const ProductDetailsInner = () => {
                 <div className='cart-wrap border-bottom-1 pb-4 mb-3'>
                   <Link
                     className='btn btn-base border-radius-0 tt-uppercase me-2 px-xl-5'
-                    to='#'
+                    href='#'
                   >
                     Add to Cart
                   </Link>
                   <Link
                     className='btn btn-black border-radius-0 tt-uppercase'
-                    to='#'
+                    href='#'
                   >
                     <i className='fa fa-heart ms-0'></i>
                   </Link>
                 </div>
                 <div className='info-list-product tt-uppercase fw-500'>
-                  <span>Category:</span> <Link to='#'>Smart Watch</Link>
+                  <span>Category:</span> <Link href='#'>Smart Watch</Link>
                 </div>
                 <div className='info-list-product tt-uppercase fw-500'>
-                  <span>Tag:</span> <Link to='#'>Gadget</Link>
+                  <span>Tag:</span> <Link href='#'>Gadget</Link>
                 </div>
               </div>
             </div>
@@ -342,7 +343,7 @@ const ProductDetailsInner = () => {
                 </div>
                 <div className='details'>
                   <h4 className='title'>
-                    <Link to='/shop-details'>Baseball Cap</Link>
+                    <Link href='/shop-details'>Baseball Cap</Link>
                   </h4>
                   <div className='ratting'>
                     <i className='fa fa-star' />
@@ -366,7 +367,7 @@ const ProductDetailsInner = () => {
                 </div>
                 <div className='details'>
                   <h4 className='title'>
-                    <Link to='/shop-details'>Baseball Cap</Link>
+                    <Link href='/shop-details'>Baseball Cap</Link>
                   </h4>
                   <div className='ratting'>
                     <i className='fa fa-star' />
@@ -390,7 +391,7 @@ const ProductDetailsInner = () => {
                 </div>
                 <div className='details'>
                   <h4 className='title'>
-                    <Link to='/shop-details'>Baseball Cap</Link>
+                    <Link href='/shop-details'>Baseball Cap</Link>
                   </h4>
                   <div className='ratting'>
                     <i className='fa fa-star' />
@@ -414,7 +415,7 @@ const ProductDetailsInner = () => {
                 </div>
                 <div className='details'>
                   <h4 className='title'>
-                    <Link to='/shop-details'>Baseball Cap</Link>
+                    <Link href='/shop-details'>Baseball Cap</Link>
                   </h4>
                   <div className='ratting'>
                     <i className='fa fa-star' />
