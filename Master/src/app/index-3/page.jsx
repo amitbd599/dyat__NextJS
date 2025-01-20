@@ -1,5 +1,6 @@
 import AboutAreaThree from "@/components/AboutAreaThree";
 import BannerThree from "@/components/BannerThree";
+import BlogAreaOne from "@/components/BlogAreaOne";
 import GalleryTwo from "@/components/GalleryTwo";
 import HeaderThree from "@/components/HeaderThree";
 import ProductAreaOne from "@/components/ProductAreaOne";
@@ -47,6 +48,9 @@ const page = () => {
 
       {/* ProductAreaOne */}
       <ProductAreaOne />
+
+      {/* BlogAreaOne */}
+      <BlogAreaOne />
     </>
   );
 };
