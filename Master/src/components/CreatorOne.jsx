@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CreatorOne = () => {
   return (
@@ -93,7 +93,7 @@ const CreatorOne = () => {
               />
               <div className='content-inner text-center'>
                 <div className='cat text-end'>
-                  <Link to='/wallet'>Crepto User</Link>
+                  <Link href='/wallet'>Crepto User</Link>
                 </div>
                 <div className='icon'>
                   <img src='assets/img/wallet/1.png' alt='img' />
@@ -102,7 +102,7 @@ const CreatorOne = () => {
                   Safe {"{"}core{"}"}
                 </span>
                 <h4>The most battle-tested Account Abstraction Stack</h4>
-                <Link className='read-more' to='wallet'>
+                <Link className='read-more' href='/wallet'>
                   Learn More <i className='fa fa-angle-right' />
                 </Link>
               </div>
@@ -126,7 +126,7 @@ const CreatorOne = () => {
               />
               <div className='content-inner text-center'>
                 <div className='cat text-end'>
-                  <Link to='/wallet'>Developer</Link>
+                  <Link href='/wallet'>Developer</Link>
                 </div>
                 <div className='icon'>
                   <img src='assets/img/wallet/2.png' alt='img' />
@@ -135,7 +135,7 @@ const CreatorOne = () => {
                   Safe {"{"}core{"}"}
                 </span>
                 <h4>The most battle-tested Account Abstraction Stack </h4>
-                <Link className='read-more' to='wallet'>
+                <Link className='read-more' href='/wallet'>
                   Learn More <i className='fa fa-angle-right' />
                 </Link>
               </div>
