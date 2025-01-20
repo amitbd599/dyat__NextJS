@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CreatorItems = () => {
   return (
@@ -34,7 +34,7 @@ const CreatorItems = () => {
                     />
                   </div>
                   <div className='d-flex justify-content-between align-items-center mt-4 pt-3'>
-                    <Link className='btn btn-base bid' to='#'>
+                    <Link className='btn btn-base bid' href='#'>
                       FILTER
                     </Link>
                     <div className='slider-values'>
@@ -132,7 +132,7 @@ const CreatorItems = () => {
                       <div className='d-flex justify-content-between align-items-center'>
                         <div className='left'>
                           <h5 className='d-block'>Highest bid</h5>
-                          <Link to='#' className='bid'>
+                          <Link href='#' className='bid'>
                             <span className='icon'>
                               <i className='fa fa-link' />
                             </span>
@@ -140,7 +140,7 @@ const CreatorItems = () => {
                           </Link>
                         </div>
                         <div className='right'>
-                          <Link className='btn btn-base bid' to='#'>
+                          <Link className='btn btn-base bid' href='#'>
                             BID <i className='fa fa-arrow-right' />
                           </Link>
                         </div>
@@ -179,7 +179,7 @@ const CreatorItems = () => {
                       <div className='d-flex justify-content-between align-items-center'>
                         <div className='left'>
                           <h5 className='d-block'>Highest bid</h5>
-                          <Link to='#' className='bid'>
+                          <Link href='#' className='bid'>
                             <span className='icon'>
                               <i className='fa fa-link' />
                             </span>
@@ -187,7 +187,7 @@ const CreatorItems = () => {
                           </Link>
                         </div>
                         <div className='right'>
-                          <Link className='btn btn-base bid' to='#'>
+                          <Link className='btn btn-base bid' href='#'>
                             BID <i className='fa fa-arrow-right' />
                           </Link>
                         </div>
@@ -226,7 +226,7 @@ const CreatorItems = () => {
                       <div className='d-flex justify-content-between align-items-center'>
                         <div className='left'>
                           <h5 className='d-block'>Highest bid</h5>
-                          <Link to='#' className='bid'>
+                          <Link href='#' className='bid'>
                             <span className='icon'>
                               <i className='fa fa-link' />
                             </span>
@@ -234,7 +234,7 @@ const CreatorItems = () => {
                           </Link>
                         </div>
                         <div className='right'>
-                          <Link className='btn btn-base bid' to='#'>
+                          <Link className='btn btn-base bid' href='#'>
                             BID <i className='fa fa-arrow-right' />
                           </Link>
                         </div>
@@ -273,7 +273,7 @@ const CreatorItems = () => {
                       <div className='d-flex justify-content-between align-items-center'>
                         <div className='left'>
                           <h5 className='d-block'>Highest bid</h5>
-                          <Link to='#' className='bid'>
+                          <Link href='#' className='bid'>
                             <span className='icon'>
                               <i className='fa fa-link' />
                             </span>
@@ -281,7 +281,7 @@ const CreatorItems = () => {
                           </Link>
                         </div>
                         <div className='right'>
-                          <Link className='btn btn-base bid' to='#'>
+                          <Link className='btn btn-base bid' href='#'>
                             BID <i className='fa fa-arrow-right' />
                           </Link>
                         </div>
@@ -320,7 +320,7 @@ const CreatorItems = () => {
                       <div className='d-flex justify-content-between align-items-center'>
                         <div className='left'>
                           <h5 className='d-block'>Highest bid</h5>
-                          <Link to='#' className='bid'>
+                          <Link href='#' className='bid'>
                             <span className='icon'>
                               <i className='fa fa-link' />
                             </span>
@@ -328,7 +328,7 @@ const CreatorItems = () => {
                           </Link>
                         </div>
                         <div className='right'>
-                          <Link className='btn btn-base bid' to='#'>
+                          <Link className='btn btn-base bid' href='#'>
                             BID <i className='fa fa-arrow-right' />
                           </Link>
                         </div>
@@ -367,7 +367,7 @@ const CreatorItems = () => {
                       <div className='d-flex justify-content-between align-items-center'>
                         <div className='left'>
                           <h5 className='d-block'>Highest bid</h5>
-                          <Link to='#' className='bid'>
+                          <Link href='#' className='bid'>
                             <span className='icon'>
                               <i className='fa fa-link' />
                             </span>
@@ -375,7 +375,7 @@ const CreatorItems = () => {
                           </Link>
                         </div>
                         <div className='right'>
-                          <Link className='btn btn-base bid' to='#'>
+                          <Link className='btn btn-base bid' href='#'>
                             BID <i className='fa fa-arrow-right' />
                           </Link>
                         </div>

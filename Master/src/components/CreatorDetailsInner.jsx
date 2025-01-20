@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CreatorDetailsInner = () => {
   return (
@@ -10,7 +10,7 @@ const CreatorDetailsInner = () => {
             <img src='assets/img/creator-2/13.png' alt='img' />
           </div>
           <div className='details' data-aos='fade-up' data-aos-delay='300'>
-            <Link className='details-btn' to='#'>
+            <Link className='details-btn' href='#'>
               <img src='assets/img/creator-2/14.png' alt='img' />
             </Link>
             <h3>Black Coin #0037</h3>
@@ -35,22 +35,22 @@ const CreatorDetailsInner = () => {
             <span className='line-shadow' />
             <ul>
               <li>
-                <Link to='#'>Collected 45</Link>
+                <Link href='#'>Collected 45</Link>
               </li>
               <li>
-                <Link to='#'>Offers made</Link>
+                <Link href='#'>Offers made</Link>
               </li>
               <li>
-                <Link to='#'>Deals</Link>
+                <Link href='#'>Deals</Link>
               </li>
               <li>
-                <Link to='#'>Created</Link>
+                <Link href='#'>Created</Link>
               </li>
               <li>
-                <Link to='#'>Favorited</Link>
+                <Link href='#'>Favorited</Link>
               </li>
               <li>
-                <Link to='#'>Activity</Link>
+                <Link href='#'>Activity</Link>
               </li>
             </ul>
           </div>
