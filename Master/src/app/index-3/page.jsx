@@ -1,6 +1,7 @@
 import AboutAreaThree from "@/components/AboutAreaThree";
 import BannerThree from "@/components/BannerThree";
 import BlogAreaOne from "@/components/BlogAreaOne";
+import FooterThree from "@/components/FooterThree";
 import GalleryTwo from "@/components/GalleryTwo";
 import HeaderThree from "@/components/HeaderThree";
 import ProductAreaOne from "@/components/ProductAreaOne";
@@ -51,6 +52,9 @@ const page = () => {
 
       {/* BlogAreaOne */}
       <BlogAreaOne />
+
+      {/* FooterThree */}
+      <FooterThree />
     </>
   );
 };

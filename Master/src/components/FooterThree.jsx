@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const FooterThree = () => {
   return (
@@ -35,19 +35,19 @@ const FooterThree = () => {
               <h4 className='widget-title'>Important Links</h4>
               <ul>
                 <li>
-                  <Link to='/creators'>CURATION</Link>
+                  <Link href='/creators'>CURATION</Link>
                 </li>
                 <li>
-                  <Link to='/about'>ABOUT US</Link>
+                  <Link href='/about'>ABOUT US</Link>
                 </li>
                 <li>
-                  <Link to='/login'>MY ACCOUNT</Link>
+                  <Link href='/login'>MY ACCOUNT</Link>
                 </li>
                 <li>
-                  <Link to='/contact'>CONTACT</Link>
+                  <Link href='/contact'>CONTACT</Link>
                 </li>
                 <li>
-                  <Link to='/checkout'>SHIPPING &amp; RETURNS</Link>
+                  <Link href='/checkout'>SHIPPING &amp; RETURNS</Link>
                 </li>
               </ul>
             </div>
