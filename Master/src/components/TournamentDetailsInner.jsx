@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TournamentDetailsInner = () => {
   return (
@@ -42,7 +42,7 @@ const TournamentDetailsInner = () => {
                     <img src='assets/img/team/info1.png' alt='img' /> About
                     Alxender Pul
                   </h3>
-                  <Link className='btn btn-base' to='#'>
+                  <Link className='btn btn-base' href='#'>
                     Join Now{" "}
                     <img
                       className='ms-2'
@@ -67,22 +67,22 @@ const TournamentDetailsInner = () => {
                     </div>
                     <div className='col-lg-6 text-md-end mt-md-0 mt-3'>
                       <div className='team-share d-inline-block'>
-                        <Link to='#'>
+                        <Link href='#'>
                           <i className='fa fa-share-alt' />
                         </Link>
                         <ul>
                           <li>
-                            <Link to='#'>
+                            <Link href='#'>
                               <i className='fab fa-facebook' />
                             </Link>
                           </li>
                           <li>
-                            <Link to='#'>
+                            <Link href='#'>
                               <i className='fab fa-twitter' />
                             </Link>
                           </li>
                           <li>
-                            <Link to='#'>
+                            <Link href='#'>
                               <i className='fab fa-pinterest' />
                             </Link>
                           </li>
