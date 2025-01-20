@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BreadcrumbOne = ({ title, theme, inner }) => {
   return (
@@ -14,7 +14,7 @@ const BreadcrumbOne = ({ title, theme, inner }) => {
           </h2>
           <ul className='page-list'>
             <li>
-              <Link to='/'>Home</Link>
+              <Link href='/'>Home</Link>
             </li>
             <li>{inner}</li>
           </ul>
