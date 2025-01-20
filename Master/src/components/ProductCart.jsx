@@ -1,5 +1,6 @@
+"use client";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const CartCount = () => {
   let [count, setCount] = useState(0);
@@ -146,7 +147,7 @@ const ProductCart = () => {
                   <span>$155.00</span>
                 </li>
                 <li>
-                  <Link className='btn btn-base w-100 mt-4' to='/checkout'>
+                  <Link className='btn btn-base w-100 mt-4' href='/checkout'>
                     Checkout
                   </Link>
                 </li>
