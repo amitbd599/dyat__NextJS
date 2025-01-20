@@ -1,3 +1,4 @@
+import BannerThree from "@/components/BannerThree";
 import HeaderThree from "@/components/HeaderThree";
 import Animation from "@/helper/Animation";
 
@@ -15,6 +16,9 @@ const page = () => {
 
       {/* HeaderThree */}
       <HeaderThree />
+
+      {/* BannerThree */}
+      <BannerThree />
     </>
   );
 };
