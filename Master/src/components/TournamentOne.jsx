@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TournamentOne = () => {
   return (
@@ -162,7 +162,7 @@ const TournamentOne = () => {
           data-aos-delay='600'
         >
           <div className='btn-box d-block'>
-            <Link className='btn btn-main style-small' to='#'>
+            <Link className='btn btn-main style-small' href='#'>
               <span>
                 <span>View More</span>
               </span>

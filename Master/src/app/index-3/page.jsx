@@ -2,6 +2,7 @@ import AboutAreaThree from "@/components/AboutAreaThree";
 import BannerThree from "@/components/BannerThree";
 import GalleryTwo from "@/components/GalleryTwo";
 import HeaderThree from "@/components/HeaderThree";
+import TournamentOne from "@/components/TournamentOne";
 import Animation from "@/helper/Animation";
 
 export const metadata = {
@@ -27,6 +28,9 @@ const page = () => {
 
       {/* GalleryTwo */}
       <GalleryTwo />
+
+      {/* TournamentOne */}
+      <TournamentOne />
     </>
   );
 };
