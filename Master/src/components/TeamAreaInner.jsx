@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TeamAreaInner = () => {
   return (
@@ -20,11 +20,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-1.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Alxender Pul</Link>
+                  <Link href='/creator-details'>Alxender Pul</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='#'>
+                <Link className='right-arrow' href='#'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -57,11 +57,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-2.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Simon Fraser</Link>
+                  <Link href='/creator-details'>Simon Fraser</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='#'>
+                <Link className='right-arrow' href='#'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -94,11 +94,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-3.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Simron</Link>
+                  <Link href='/creator-details'>Simron</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/'>
+                <Link className='right-arrow' href='/'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -131,11 +131,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-4.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Robarl Nonal</Link>
+                  <Link href='/creator-details'>Robarl Nonal</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/'>
+                <Link className='right-arrow' href='/'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -168,11 +168,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-5.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Robart jr</Link>
+                  <Link href='/creator-details'>Robart jr</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/'>
+                <Link className='right-arrow' href='/'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -205,11 +205,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-6.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Kader Jobber</Link>
+                  <Link href='/creator-details'>Kader Jobber</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/'>
+                <Link className='right-arrow' href='/'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -242,11 +242,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-7.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Robarto nr</Link>
+                  <Link href='/creator-details'>Robarto nr</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/creator-details'>
+                <Link className='right-arrow' href='/creator-details'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -279,11 +279,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-8.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Jone Doe</Link>
+                  <Link href='/creator-details'>Jone Doe</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/creator-details'>
+                <Link className='right-arrow' href='/creator-details'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -316,11 +316,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-1.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Alex Ender</Link>
+                  <Link href='/creator-details'>Alex Ender</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/creator-details'>
+                <Link className='right-arrow' href='/creator-details'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -353,11 +353,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-2.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Alxen Derul</Link>
+                  <Link href='/creator-details'>Alxen Derul</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/creator-details'>
+                <Link className='right-arrow' href='/creator-details'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -390,11 +390,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-3.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Fique dr</Link>
+                  <Link href='/creator-details'>Fique dr</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/creator-details'>
+                <Link className='right-arrow' href='/creator-details'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -427,11 +427,11 @@ const TeamAreaInner = () => {
                   <img src='assets/img/creator-2/u-4.png' alt='img' />
                 </div>
                 <h5 className='name'>
-                  <Link to='/creator-details'>Vender Pul</Link>
+                  <Link href='/creator-details'>Vender Pul</Link>
                 </h5>
                 <span className='amount'>CEO</span>
                 <span className='line-shadow' />
-                <Link className='right-arrow' to='/creator-details'>
+                <Link className='right-arrow' href='/creator-details'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
