@@ -2,9 +2,11 @@ import AboutAreaThree from "@/components/AboutAreaThree";
 import BannerThree from "@/components/BannerThree";
 import GalleryTwo from "@/components/GalleryTwo";
 import HeaderThree from "@/components/HeaderThree";
+import ProductAreaOne from "@/components/ProductAreaOne";
 import RoadmapOne from "@/components/RoadmapOne";
 import TopAdvisorsTwo from "@/components/TopAdvisorsTwo";
 import TournamentOne from "@/components/TournamentOne";
+import VideoOne from "@/components/VideoOne";
 import Animation from "@/helper/Animation";
 
 export const metadata = {
@@ -39,6 +41,12 @@ const page = () => {
 
       {/* TopAdvisorsTwo */}
       <TopAdvisorsTwo />
+
+      {/* VideoOne */}
+      <VideoOne />
+
+      {/* ProductAreaOne */}
+      <ProductAreaOne />
     </>
   );
 };
