@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const RoadmapOne = () => {
   return (
@@ -100,7 +100,7 @@ const RoadmapOne = () => {
                     Great Rewards Derwin ( Friend )
                   </p>
                   <div className='btn-box d-block'>
-                    <Link className='btn btn-main style-small' to='#'>
+                    <Link className='btn btn-main style-small' href='#'>
                       <span>
                         <span>Road Mape</span>
                       </span>
@@ -137,7 +137,7 @@ const RoadmapOne = () => {
                     Victory Rewards Derwin ( Friend )
                   </p>
                   <div className='btn-box d-block'>
-                    <Link className='btn btn-main style-small' to='#'>
+                    <Link className='btn btn-main style-small' href='#'>
                       <span>Victory Mape</span>
                     </Link>
                   </div>
