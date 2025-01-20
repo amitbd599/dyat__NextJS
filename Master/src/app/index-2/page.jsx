@@ -1,5 +1,6 @@
 import AboutAreaTwo from "@/components/AboutAreaTwo";
 import BannerTwo from "@/components/BannerTwo";
+import FeatureAreaTwo from "@/components/FeatureAreaTwo";
 import GalleryOne from "@/components/GalleryOne";
 import HeaderTwo from "@/components/HeaderTwo";
 import Animation from "@/helper/Animation";
@@ -27,6 +28,9 @@ const page = () => {
 
       {/* GalleryOne */}
       <GalleryOne />
+
+      {/* FeatureAreaTwo */}
+      <FeatureAreaTwo />
     </>
   );
 };

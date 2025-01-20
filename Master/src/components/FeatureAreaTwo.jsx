@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const FeatureAreaTwo = () => {
   return (
@@ -26,7 +26,7 @@ const FeatureAreaTwo = () => {
             <div className='col-lg-4 align-self-center text-lg-end'>
               <Link
                 className='read-more-arrow-text d-inline-flex align-items-end'
-                to='#'
+                href='#'
               >
                 Discover More
                 <span>
@@ -53,9 +53,9 @@ const FeatureAreaTwo = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -63,7 +63,7 @@ const FeatureAreaTwo = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
@@ -86,9 +86,9 @@ const FeatureAreaTwo = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -96,7 +96,7 @@ const FeatureAreaTwo = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
@@ -119,9 +119,9 @@ const FeatureAreaTwo = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -129,7 +129,7 @@ const FeatureAreaTwo = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
@@ -152,9 +152,9 @@ const FeatureAreaTwo = () => {
               <div className='details d-flex justify-content-between align-items-center'>
                 <div className='left'>
                   <h5 className='d-block'>
-                    <Link to='/creator-details'>Highest bid</Link>
+                    <Link href='/creator-details'>Highest bid</Link>
                   </h5>
-                  <Link to='/creator-details' className='bid'>
+                  <Link href='/creator-details' className='bid'>
                     <span className='icon'>
                       <i className='fa fa-link' />
                     </span>
@@ -162,7 +162,7 @@ const FeatureAreaTwo = () => {
                   </Link>
                 </div>
                 <div className='right'>
-                  <Link className='btn btn-base bid' to='/creator-details'>
+                  <Link className='btn btn-base bid' href='/creator-details'>
                     BID <i className='fa fa-arrow-right' />
                   </Link>
                 </div>
