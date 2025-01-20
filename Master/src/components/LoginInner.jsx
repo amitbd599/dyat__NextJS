@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const LoginInner = () => {
   return (
@@ -20,7 +20,7 @@ const LoginInner = () => {
                   </h2>
                   <p className='mb-0 mt-3'>
                     Already a Member?{" "}
-                    <Link className='color-base' to='#'>
+                    <Link className='color-base' href='#'>
                       Log in
                     </Link>
                   </p>
@@ -39,7 +39,7 @@ const LoginInner = () => {
                     <img src='assets/img/icon/18.png' alt='img' />
                   </span>
                 </div>
-                <Link className='btn btn-base tt-uppercase w-100' to='#'>
+                <Link className='btn btn-base tt-uppercase w-100' href='#'>
                   Log in
                 </Link>
                 <div className='text-md-end mt-4 tt-uppercase'>
@@ -63,7 +63,7 @@ const LoginInner = () => {
               <div className='login-social-btn mt-4'>
                 <Link
                   className='tt-uppercase w-100 border-1 d-block w-100 border-radius-6 p-4'
-                  to='#'
+                  href='#'
                 >
                   <i className='fab fa-facebook me-2' />
                   login with facebook
@@ -71,7 +71,7 @@ const LoginInner = () => {
                 </Link>
                 <Link
                   className='tt-uppercase w-100 border-1 d-block w-100 border-radius-6 p-4'
-                  to='#'
+                  href='#'
                 >
                   <i className='fab fa-apple me-2' />
                   login with apple
@@ -79,7 +79,7 @@ const LoginInner = () => {
                 </Link>
                 <Link
                   className='tt-uppercase w-100 border-1 d-block w-100 border-radius-6 p-4'
-                  to='#'
+                  href='#'
                 >
                   <i className='fab fa-google me-2' />
                   login with Google

@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const HelpCenterInner = () => {
   return (
@@ -22,7 +22,7 @@ const HelpCenterInner = () => {
               </form>
             </div>
             <div className='widget payment_wallet mb-4'>
-              <Link to='#'>
+              <Link href='#'>
                 <span>
                   <i className='fa fa-copy' />
                   Payment &amp; Wallet
@@ -33,19 +33,19 @@ const HelpCenterInner = () => {
               </Link>
             </div>
             <div className='widget list_widget'>
-              <Link to='#'>
+              <Link href='#'>
                 <i className='fa fa-copy' />
                 On Of The Kind Of NFT Marketplace
               </Link>
-              <Link to='#'>
+              <Link href='#'>
                 <i className='fa fa-copy' />
                 Exclusive Payment Constrac &amp; Wallet
               </Link>
-              <Link to='#'>
+              <Link href='#'>
                 <i className='fa fa-copy' />
                 Voting Payment &amp; Wallet
               </Link>
-              <Link to='#'>
+              <Link href='#'>
                 <i className='fa fa-copy' />
                 Kind Of NFT Marketplace
               </Link>
