@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const WalletInner = () => {
   return (
@@ -18,7 +18,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/9.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -35,7 +35,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -55,7 +55,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/10.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -72,7 +72,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -92,7 +92,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/11.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -109,7 +109,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -129,7 +129,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/12.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -146,7 +146,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -166,7 +166,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/13.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -183,7 +183,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -203,7 +203,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/14.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -220,7 +220,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -240,7 +240,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/15.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -257,7 +257,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -277,7 +277,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/16.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -294,7 +294,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>
@@ -314,7 +314,7 @@ const WalletInner = () => {
                   <div className='icon'>
                     <img src='assets/img/wallet/17.png' alt='img' />
                   </div>
-                  <Link className='read-more text-end d-block' to='#'>
+                  <Link className='read-more text-end d-block' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -331,7 +331,7 @@ const WalletInner = () => {
                     </svg>
                   </Link>
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='far fa-bookmark' />
                   Connect
                 </Link>

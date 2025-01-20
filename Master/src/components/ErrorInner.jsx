@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ErrorInner = () => {
   return (
@@ -18,7 +18,7 @@ const ErrorInner = () => {
                 were trying to reach couldn't be found on the server.
               </p>
               <div className='btn-box d-inline-block'>
-                <Link className='btn btn-main' to='/'>
+                <Link className='btn btn-main' href='/'>
                   <span>
                     <span>Explore More</span>
                   </span>

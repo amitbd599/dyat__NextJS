@@ -1,7 +1,7 @@
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import FooterOne from "@/components/FooterOne";
 import HeaderTwo from "@/components/HeaderTwo";
-import TournamentDetailsInner from "@/components/TournamentDetailsInner";
+import WalletInner from "@/components/WalletInner";
 import Animation from "@/helper/Animation";
 
 export const metadata = {
@@ -20,19 +20,13 @@ const page = () => {
       <HeaderTwo />
 
       {/* BreadcrumbOne */}
-      <BreadcrumbOne
-        title='Tournament'
-        theme='Details'
-        inner='Tournament Details'
-      />
+      <BreadcrumbOne title='Connect' theme='Wallet' inner='Wallet' />
 
-      {/* TournamentDetailsInner */}
-      <TournamentDetailsInner />
+      {/* WalletInner */}
+      <WalletInner />
 
       {/* FooterOne */}
-      <div className='tournament__footer mt--35'>
-        <FooterOne />
-      </div>
+      <FooterOne />
     </>
   );
 };

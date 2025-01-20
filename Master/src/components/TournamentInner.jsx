@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TournamentInner = () => {
   return (
@@ -28,7 +28,7 @@ const TournamentInner = () => {
                     <h6>Action</h6>
                     <h4 className='mb-0'>Escape Room</h4>
                   </div>
-                  <Link className='right-arrow' to='#'>
+                  <Link className='right-arrow' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -63,7 +63,7 @@ const TournamentInner = () => {
                       </span>
                     </div>
                     <div className='col-4 text-end'>
-                      <Link className='btn btn-gray' to='#'>
+                      <Link className='btn btn-gray' href='#'>
                         live Now
                         <i className='fa fa-arrow-right' aria-hidden='true' />
                       </Link>
@@ -95,7 +95,7 @@ const TournamentInner = () => {
                     <h6>Action</h6>
                     <h4 className='mb-0'>Escape Room</h4>
                   </div>
-                  <Link className='right-arrow' to='#'>
+                  <Link className='right-arrow' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -130,7 +130,7 @@ const TournamentInner = () => {
                       </span>
                     </div>
                     <div className='col-4 text-end'>
-                      <Link className='btn btn-gray' to='#'>
+                      <Link className='btn btn-gray' href='#'>
                         live Now
                         <i className='fa fa-arrow-right' aria-hidden='true' />
                       </Link>
@@ -162,7 +162,7 @@ const TournamentInner = () => {
                     <h6>Action</h6>
                     <h4 className='mb-0'>Escape Room</h4>
                   </div>
-                  <Link className='right-arrow' to='#'>
+                  <Link className='right-arrow' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -197,7 +197,7 @@ const TournamentInner = () => {
                       </span>
                     </div>
                     <div className='col-4 text-end'>
-                      <Link className='btn btn-gray' to='#'>
+                      <Link className='btn btn-gray' href='#'>
                         live Now
                         <i className='fa fa-arrow-right' aria-hidden='true' />
                       </Link>
@@ -229,7 +229,7 @@ const TournamentInner = () => {
                     <h6>Action</h6>
                     <h4 className='mb-0'>Escape Room</h4>
                   </div>
-                  <Link className='right-arrow' to='#'>
+                  <Link className='right-arrow' href='#'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -264,7 +264,7 @@ const TournamentInner = () => {
                       </span>
                     </div>
                     <div className='col-4 text-end'>
-                      <Link className='btn btn-gray' to='#'>
+                      <Link className='btn btn-gray' href='#'>
                         live Now
                         <i className='fa fa-arrow-right' aria-hidden='true' />
                       </Link>

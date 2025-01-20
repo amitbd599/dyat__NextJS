@@ -1,7 +1,9 @@
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import FooterOne from "@/components/FooterOne";
 import HeaderTwo from "@/components/HeaderTwo";
-import TournamentDetailsInner from "@/components/TournamentDetailsInner";
+import TeamAreaInnerTwo from "@/components/TeamAreaInnerTwo";
+import TournamentInner from "@/components/TournamentInner";
+import VideoOne from "@/components/VideoOne";
 import Animation from "@/helper/Animation";
 
 export const metadata = {
@@ -20,19 +22,19 @@ const page = () => {
       <HeaderTwo />
 
       {/* BreadcrumbOne */}
-      <BreadcrumbOne
-        title='Tournament'
-        theme='Details'
-        inner='Tournament Details'
-      />
+      <BreadcrumbOne title='Tournament' theme='' inner='Tournament' />
 
-      {/* TournamentDetailsInner */}
-      <TournamentDetailsInner />
+      {/* TournamentInner */}
+      <TournamentInner />
+
+      {/* VideoOne */}
+      <VideoOne />
+
+      {/* TeamAreaInnerTwo */}
+      <TeamAreaInnerTwo />
 
       {/* FooterOne */}
-      <div className='tournament__footer mt--35'>
-        <FooterOne />
-      </div>
+      <FooterOne />
     </>
   );
 };
