@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ExploreProductInner = () => {
   return (
@@ -33,7 +33,7 @@ const ExploreProductInner = () => {
                   />
                 </div>
                 <div className='d-flex justify-content-between align-items-center mt-4 pt-3'>
-                  <Link className='btn btn-base bid' to='#'>
+                  <Link className='btn btn-base bid' href='#'>
                     FILTER
                   </Link>
                   <div className='slider-values'>
@@ -70,7 +70,7 @@ const ExploreProductInner = () => {
                     </div>
                     <div className='media-body align-self-center'>
                       <h6 className='title'>
-                        <Link to='/blog-details'>Monkey Jet</Link>
+                        <Link href='/blog-details'>Monkey Jet</Link>
                       </h6>
                       <div className='post-info'>
                         <span> 3.05 ETH</span>
@@ -85,7 +85,7 @@ const ExploreProductInner = () => {
                     </div>
                     <div className='media-body align-self-center'>
                       <h6 className='title'>
-                        <Link to='/blog-details'>Black Coin</Link>
+                        <Link href='/blog-details'>Black Coin</Link>
                       </h6>
                       <div className='post-info'>
                         <span> 3.05 ETH</span>
@@ -100,7 +100,7 @@ const ExploreProductInner = () => {
                     </div>
                     <div className='media-body align-self-center'>
                       <h6 className='title'>
-                        <Link to='/blog-details'>Legendary</Link>
+                        <Link href='/blog-details'>Legendary</Link>
                       </h6>
                       <div className='post-info'>
                         <span> 3.05 ETH</span>
@@ -198,7 +198,7 @@ const ExploreProductInner = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -206,7 +206,7 @@ const ExploreProductInner = () => {
                         </Link>
                       </div>
                       <div className='right'>
-                        <Link className='btn btn-base bid' to='#'>
+                        <Link className='btn btn-base bid' href='#'>
                           BID <i className='fa fa-arrow-right' />
                         </Link>
                       </div>
@@ -245,7 +245,7 @@ const ExploreProductInner = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -253,7 +253,7 @@ const ExploreProductInner = () => {
                         </Link>
                       </div>
                       <div className='right'>
-                        <Link className='btn btn-base bid' to='#'>
+                        <Link className='btn btn-base bid' href='#'>
                           BID <i className='fa fa-arrow-right' />
                         </Link>
                       </div>
@@ -292,7 +292,7 @@ const ExploreProductInner = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -300,7 +300,7 @@ const ExploreProductInner = () => {
                         </Link>
                       </div>
                       <div className='right'>
-                        <Link className='btn btn-base bid' to='#'>
+                        <Link className='btn btn-base bid' href='#'>
                           BID <i className='fa fa-arrow-right' />
                         </Link>
                       </div>
@@ -339,7 +339,7 @@ const ExploreProductInner = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -347,7 +347,7 @@ const ExploreProductInner = () => {
                         </Link>
                       </div>
                       <div className='right'>
-                        <Link className='btn btn-base bid' to='#'>
+                        <Link className='btn btn-base bid' href='#'>
                           BID <i className='fa fa-arrow-right' />
                         </Link>
                       </div>
@@ -386,7 +386,7 @@ const ExploreProductInner = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -394,7 +394,7 @@ const ExploreProductInner = () => {
                         </Link>
                       </div>
                       <div className='right'>
-                        <Link className='btn btn-base bid' to='#'>
+                        <Link className='btn btn-base bid' href='#'>
                           BID <i className='fa fa-arrow-right' />
                         </Link>
                       </div>
@@ -433,7 +433,7 @@ const ExploreProductInner = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -441,7 +441,7 @@ const ExploreProductInner = () => {
                         </Link>
                       </div>
                       <div className='right'>
-                        <Link className='btn btn-base bid' to='#'>
+                        <Link className='btn btn-base bid' href='#'>
                           BID <i className='fa fa-arrow-right' />
                         </Link>
                       </div>
