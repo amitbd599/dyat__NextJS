@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const GalleryTwo = () => {
   return (
@@ -7,7 +7,7 @@ const GalleryTwo = () => {
       <div className='row'>
         <div className='col-sm-3 px-2'>
           <div className='thumb'>
-            <Link to='/tournament-details'>
+            <Link href='/tournament-details'>
               <img
                 className='w-100'
                 src='assets/img/gallery-3/1.png'
@@ -18,7 +18,7 @@ const GalleryTwo = () => {
         </div>
         <div className='col-sm-6 px-2'>
           <div className='thumb'>
-            <Link to='/tournament-details'>
+            <Link href='/tournament-details'>
               <img
                 className='w-100'
                 src='assets/img/gallery-3/2.png'
@@ -29,7 +29,7 @@ const GalleryTwo = () => {
           <div className='row px-2'>
             <div className='col-sm-6 px-2'>
               <div className='thumb'>
-                <Link to='/tournament-details'>
+                <Link href='/tournament-details'>
                   <img
                     className='w-100'
                     src='assets/img/gallery-3/3.png'
@@ -40,7 +40,7 @@ const GalleryTwo = () => {
             </div>
             <div className='col-sm-6 px-2'>
               <div className='thumb'>
-                <Link to='/tournament-details'>
+                <Link href='/tournament-details'>
                   <img
                     className='w-100'
                     src='assets/img/gallery-3/4.png'
@@ -53,7 +53,7 @@ const GalleryTwo = () => {
         </div>
         <div className='col-sm-3 px-2'>
           <div className='thumb'>
-            <Link to='/tournament-details'>
+            <Link href='/tournament-details'>
               <img
                 className='w-100'
                 src='assets/img/gallery-3/5.png'

@@ -1,5 +1,6 @@
 import AboutAreaThree from "@/components/AboutAreaThree";
 import BannerThree from "@/components/BannerThree";
+import GalleryTwo from "@/components/GalleryTwo";
 import HeaderThree from "@/components/HeaderThree";
 import Animation from "@/helper/Animation";
 
@@ -23,6 +24,9 @@ const page = () => {
 
       {/* AboutAreaThree */}
       <AboutAreaThree />
+
+      {/* GalleryTwo */}
+      <GalleryTwo />
     </>
   );
 };
