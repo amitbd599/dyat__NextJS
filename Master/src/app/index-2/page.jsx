@@ -4,6 +4,7 @@ import CreatorOne from "@/components/CreatorOne";
 import FeatureAreaTwo from "@/components/FeatureAreaTwo";
 import GalleryOne from "@/components/GalleryOne";
 import HeaderTwo from "@/components/HeaderTwo";
+import TopAdvisorsOne from "@/components/TopAdvisorsOne";
 import TopAuctionOne from "@/components/TopAuctionOne";
 import Animation from "@/helper/Animation";
 
@@ -39,6 +40,9 @@ const page = () => {
 
       {/* TopAuctionOne */}
       <TopAuctionOne />
+
+      {/* TopAdvisorsOne */}
+      <TopAdvisorsOne />
     </>
   );
 };
