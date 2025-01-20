@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TeamDetailsInner = () => {
   return (
@@ -19,13 +19,13 @@ const TeamDetailsInner = () => {
                 <h5 className='name'>Alxender Pul</h5>
                 <span className='designation'>Co-Founder</span>
                 <div className='social-list text-end'>
-                  <Link to='#'>
+                  <Link href='#'>
                     <i className='fab fa-facebook' />
                   </Link>
-                  <Link to='#'>
+                  <Link href='#'>
                     <i className='fab fa-twitter' />
                   </Link>
-                  <Link to='#'>
+                  <Link href='#'>
                     <i className='fab fa-linkedin' />
                   </Link>
                 </div>
@@ -46,7 +46,7 @@ const TeamDetailsInner = () => {
                   <img src='assets/img/team/info1.png' alt='img' /> About
                   Alxender Pul
                 </h3>
-                <Link className='btn btn-base' to='#'>
+                <Link className='btn btn-base' href='#'>
                   Join Now{" "}
                   <img
                     className='ms-2'
@@ -71,22 +71,22 @@ const TeamDetailsInner = () => {
                   </div>
                   <div className='col-6 text-end'>
                     <div className='team-share d-inline-block'>
-                      <Link to='#'>
+                      <Link href='#'>
                         <i className='fa fa-share-alt' />
                       </Link>
                       <ul>
                         <li>
-                          <Link to='#'>
+                          <Link href='#'>
                             <i className='fab fa-facebook' />
                           </Link>
                         </li>
                         <li>
-                          <Link to='#'>
+                          <Link href='#'>
                             <i className='fab fa-twitter' />
                           </Link>
                         </li>
                         <li>
-                          <Link to='#'>
+                          <Link href='#'>
                             <i className='fab fa-pinterest' />
                           </Link>
                         </li>
