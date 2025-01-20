@@ -1,5 +1,6 @@
+"use client";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const CartCount = () => {
   let [count, setCount] = useState(0);
@@ -105,7 +106,7 @@ const CheckoutCartInner = () => {
                   placeholder='discount code'
                 />
               </div>
-              <Link className='btn btn-base px-xl-5' to='/'>
+              <Link className='btn btn-base px-xl-5' href='/'>
                 Apply
               </Link>
             </div>
@@ -134,13 +135,13 @@ const CheckoutCartInner = () => {
             <form className='checkout-inner-left'>
               <h5 className='tt-uppercase mb-4'>express checkout</h5>
               <div className='btn-wrap d-flex justify-content-between gap-2'>
-                <Link className='btn btn-border-black w-100' to='/'>
+                <Link className='btn btn-border-black w-100' href='/'>
                   <img src='assets/img/icon/14.png' alt='img' />
                 </Link>
-                <Link className='btn btn-border-black w-100' to='/'>
+                <Link className='btn btn-border-black w-100' href='/'>
                   <img src='assets/img/icon/15.png' alt='img' />
                 </Link>
-                <Link className='btn btn-border-black w-100' to='/'>
+                <Link className='btn btn-border-black w-100' href='/'>
                   <img src='assets/img/icon/16.png' alt='img' />
                 </Link>
               </div>
@@ -150,7 +151,7 @@ const CheckoutCartInner = () => {
               <div className='d-flex justify-content-between'>
                 <h5 className='tt-uppercase mb-4'>express checkout</h5>
                 <p className='mb-0 fw-500 tt-uppercase'>
-                  Have an account? <Link to='/login'>LOG IN</Link>
+                  Have an account? <Link href='/login'>LOG IN</Link>
                 </p>
               </div>
               <div className='single-input-inner style-border border-1 border-radius-6'>
@@ -247,7 +248,7 @@ const CheckoutCartInner = () => {
                   <span>Takes 3-5 Business Day</span>
                 </div>
               </div>
-              <Link className='btn btn-base w-100 tt-uppercase mt-4' to='/'>
+              <Link className='btn btn-base w-100 tt-uppercase mt-4' href='/'>
                 Continue to payment
               </Link>
             </form>
