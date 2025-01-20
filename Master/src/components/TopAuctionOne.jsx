@@ -1,5 +1,6 @@
+"use client";
+import Link from "next/link";
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const TopAuctionOne = () => {
@@ -108,7 +109,7 @@ const TopAuctionOne = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -118,7 +119,7 @@ const TopAuctionOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
@@ -140,7 +141,7 @@ const TopAuctionOne = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -150,7 +151,7 @@ const TopAuctionOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
@@ -172,7 +173,7 @@ const TopAuctionOne = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -182,7 +183,7 @@ const TopAuctionOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>
@@ -204,7 +205,7 @@ const TopAuctionOne = () => {
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>
                         <h5 className='d-block'>Highest bid</h5>
-                        <Link to='#' className='bid'>
+                        <Link href='#' className='bid'>
                           <span className='icon'>
                             <i className='fa fa-link' />
                           </span>
@@ -214,7 +215,7 @@ const TopAuctionOne = () => {
                       <div className='right'>
                         <Link
                           className='btn btn-base bid'
-                          to='/creator-details'
+                          href='/creator-details'
                         >
                           BID <i className='fa fa-arrow-right' />
                         </Link>

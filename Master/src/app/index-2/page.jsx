@@ -4,6 +4,7 @@ import CreatorOne from "@/components/CreatorOne";
 import FeatureAreaTwo from "@/components/FeatureAreaTwo";
 import GalleryOne from "@/components/GalleryOne";
 import HeaderTwo from "@/components/HeaderTwo";
+import TopAuctionOne from "@/components/TopAuctionOne";
 import Animation from "@/helper/Animation";
 
 export const metadata = {
@@ -35,6 +36,9 @@ const page = () => {
 
       {/* CreatorOne */}
       <CreatorOne />
+
+      {/* TopAuctionOne */}
+      <TopAuctionOne />
     </>
   );
 };
