@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const PlatformOne = () => {
   return (
@@ -39,7 +39,7 @@ const PlatformOne = () => {
                 data-aos='fade-up'
                 data-aos-delay='500'
               >
-                <Link className='btn btn-main style-small' to='/about'>
+                <Link className='btn btn-main style-small' href='/about'>
                   <span>
                     <span>Explore More</span>
                   </span>
@@ -55,7 +55,7 @@ const PlatformOne = () => {
             >
               <img className='bg-image' src='assets/img/bg/2.png' alt='img' />
               <div className='details-inner'>
-                <Link className='read-more text-end d-block' to='/wallet'>
+                <Link className='read-more text-end d-block' href='/wallet'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -74,7 +74,7 @@ const PlatformOne = () => {
                 <div className='icon'>
                   <img src='assets/img/platform/1.png' alt='img' />
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='fa fa-bookmark' />
                   Developer
                 </Link>
@@ -94,7 +94,7 @@ const PlatformOne = () => {
             >
               <img className='bg-image' src='assets/img/bg/1.png' alt='img' />
               <div className='details-inner'>
-                <Link className='read-more text-end d-block' to='/wallet'>
+                <Link className='read-more text-end d-block' href='/wallet'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -113,7 +113,7 @@ const PlatformOne = () => {
                 <div className='icon'>
                   <img src='assets/img/platform/2.png' alt='img' />
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='fa fa-bookmark' />
                   Developer
                 </Link>
@@ -131,7 +131,7 @@ const PlatformOne = () => {
             >
               <img className='bg-image' src='assets/img/bg/1.png' alt='img' />
               <div className='details-inner'>
-                <Link className='read-more text-end d-block' to='/wallet'>
+                <Link className='read-more text-end d-block' href='/wallet'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -150,7 +150,7 @@ const PlatformOne = () => {
                 <div className='icon'>
                   <img src='assets/img/platform/2.png' alt='img' />
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='fa fa-bookmark' />
                   Developer
                 </Link>
@@ -168,7 +168,7 @@ const PlatformOne = () => {
             >
               <img className='bg-image' src='assets/img/bg/1.png' alt='img' />
               <div className='details-inner'>
-                <Link className='read-more text-end d-block' to='/wallet'>
+                <Link className='read-more text-end d-block' href='/wallet'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
@@ -187,7 +187,7 @@ const PlatformOne = () => {
                 <div className='icon'>
                   <img src='assets/img/platform/3.png' alt='img' />
                 </div>
-                <Link to='#' className='cat'>
+                <Link href='#' className='cat'>
                   <i className='fa fa-bookmark' />
                   Developer
                 </Link>

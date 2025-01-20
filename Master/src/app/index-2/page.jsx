@@ -4,6 +4,8 @@ import CreatorOne from "@/components/CreatorOne";
 import FeatureAreaTwo from "@/components/FeatureAreaTwo";
 import GalleryOne from "@/components/GalleryOne";
 import HeaderTwo from "@/components/HeaderTwo";
+import InstagramAreaOne from "@/components/InstagramAreaOne";
+import PlatformOne from "@/components/PlatformOne";
 import TopAdvisorsOne from "@/components/TopAdvisorsOne";
 import TopAuctionOne from "@/components/TopAuctionOne";
 import Animation from "@/helper/Animation";
@@ -43,6 +45,12 @@ const page = () => {
 
       {/* TopAdvisorsOne */}
       <TopAdvisorsOne />
+
+      {/* PlatformOne */}
+      <PlatformOne />
+
+      {/* InstagramAreaOne */}
+      <InstagramAreaOne />
     </>
   );
 };

@@ -1,5 +1,6 @@
+"use client";
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const InstagramAreaOne = () => {
@@ -43,7 +44,7 @@ const InstagramAreaOne = () => {
   };
   return (
     <div className='instagram-slider-area position-relative'>
-      <Link className='instagram-btn' to='#'>
+      <Link className='instagram-btn' href='#'>
         Instagram
       </Link>
       <div className='swiper instagram-slider'>
