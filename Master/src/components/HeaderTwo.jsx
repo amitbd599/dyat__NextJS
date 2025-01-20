@@ -163,9 +163,7 @@ const HeaderTwo = () => {
               <li>
                 <Link
                   href='/about'
-                  className={
-                    ["/about"].includes(location.pathname) ? "active" : ""
-                  }
+                  className={["/about"].includes(location) ? "active" : ""}
                 >
                   About Us
                 </Link>
@@ -173,9 +171,7 @@ const HeaderTwo = () => {
               <li className='menu-item-has-children'>
                 <Link
                   className={
-                    ["/tournament", "/tournament-details"].includes(
-                      location.pathname
-                    )
+                    ["/tournament", "/tournament-details"].includes(location)
                       ? "active"
                       : ""
                   }

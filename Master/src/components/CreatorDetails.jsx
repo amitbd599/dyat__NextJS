@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CreatorDetails = () => {
   return (
@@ -46,7 +46,7 @@ const CreatorDetails = () => {
                     <h6 className='d-block mb-0'>Bidding Price: $66.25</h6>
                   </div>
                   <div className='right'>
-                    <Link className='btn btn-base bid' to='/'>
+                    <Link className='btn btn-base bid' href='/'>
                       BID <i className='fa fa-arrow-right' />
                     </Link>
                   </div>
@@ -94,7 +94,7 @@ const CreatorDetails = () => {
                     <h6 className='d-block mb-0'>Bidding Price: $66.25</h6>
                   </div>
                   <div className='right'>
-                    <Link className='btn btn-base bid' to='/'>
+                    <Link className='btn btn-base bid' href='/'>
                       BID <i className='fa fa-arrow-right' />
                     </Link>
                   </div>
@@ -142,7 +142,7 @@ const CreatorDetails = () => {
                     <h6 className='d-block mb-0'>Bidding Price: $66.25</h6>
                   </div>
                   <div className='right'>
-                    <Link className='btn btn-base bid' to='/'>
+                    <Link className='btn btn-base bid' href='/'>
                       BID <i className='fa fa-arrow-right' />
                     </Link>
                   </div>
@@ -190,7 +190,7 @@ const CreatorDetails = () => {
                     <h6 className='d-block mb-0'>Bidding Price: $66.25</h6>
                   </div>
                   <div className='right'>
-                    <Link className='btn btn-base bid' to='/'>
+                    <Link className='btn btn-base bid' href='/'>
                       BID <i className='fa fa-arrow-right' />
                     </Link>
                   </div>
@@ -238,7 +238,7 @@ const CreatorDetails = () => {
                     <h6 className='d-block mb-0'>Bidding Price: $66.25</h6>
                   </div>
                   <div className='right'>
-                    <Link className='btn btn-base bid' to='/'>
+                    <Link className='btn btn-base bid' href='/'>
                       BID <i className='fa fa-arrow-right' />
                     </Link>
                   </div>
@@ -286,7 +286,7 @@ const CreatorDetails = () => {
                     <h6 className='d-block mb-0'>Bidding Price: $66.25</h6>
                   </div>
                   <div className='right'>
-                    <Link className='btn btn-base bid' to='/'>
+                    <Link className='btn btn-base bid' href='/'>
                       BID <i className='fa fa-arrow-right' />
                     </Link>
                   </div>
