@@ -2,6 +2,7 @@ import AboutAreaTwo from "@/components/AboutAreaTwo";
 import BannerTwo from "@/components/BannerTwo";
 import CreatorOne from "@/components/CreatorOne";
 import FeatureAreaTwo from "@/components/FeatureAreaTwo";
+import FooterTwo from "@/components/FooterTwo";
 import GalleryOne from "@/components/GalleryOne";
 import HeaderTwo from "@/components/HeaderTwo";
 import InstagramAreaOne from "@/components/InstagramAreaOne";
@@ -51,6 +52,9 @@ const page = () => {
 
       {/* InstagramAreaOne */}
       <InstagramAreaOne />
+
+      {/* FooterTwo */}
+      <FooterTwo />
     </>
   );
 };

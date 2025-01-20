@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const FooterTwo = () => {
   return (
@@ -9,7 +9,7 @@ const FooterTwo = () => {
     >
       <div className='container'>
         <div className='footer-top'>
-          <Link className='footer-logo' to='/'>
+          <Link className='footer-logo' href='/'>
             <img src='assets/img/logo.png' alt='img' />
           </Link>
           <p>
@@ -18,27 +18,27 @@ const FooterTwo = () => {
           <ul className='p-0 m-0'>
             <li>
               {" "}
-              <Link to='/'>Home</Link>
+              <Link href='/'>Home</Link>
             </li>
             <li>
               {" "}
-              <Link to='/about'>About Us</Link>
+              <Link href='/about'>About Us</Link>
             </li>
             <li>
               {" "}
-              <Link to='/tournament'>Tournament</Link>
+              <Link href='/tournament'>Tournament</Link>
             </li>
             <li>
               {" "}
-              <Link to='/news'>News</Link>
+              <Link href='/news'>News</Link>
             </li>
             <li>
               {" "}
-              <Link to='/pages'>Pages</Link>
+              <Link href='/pages'>Pages</Link>
             </li>
             <li>
               {" "}
-              <Link to='/contact'>Contact</Link>
+              <Link href='/contact'>Contact</Link>
             </li>
           </ul>
           <img src='assets/img/footer/line.png' alt='img' />
