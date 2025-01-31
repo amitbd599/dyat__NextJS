@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const LoginInner = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className='product-cart-area bg-color-50 pd-top-120 pd-bottom-120'>
       <div className='container'>
@@ -28,15 +30,25 @@ const LoginInner = () => {
               </div>
               <form className='login-form-inner'>
                 <div className='single-input-inner style-border'>
-                  <input type='text' placeholder='Your Email' />
+                  <input type='email' placeholder='Your Email' />
                   <span>
                     <img src='assets/img/icon/17.png' alt='img' />
                   </span>
                 </div>
-                <div className='single-input-inner style-border'>
-                  <input type='password' placeholder='Password' />
-                  <span>
-                    <img src='assets/img/icon/18.png' alt='img' />
+                <div
+                  className='single-input-inner style-border'
+                  style={{ position: "relative" }}
+                >
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder='Password'
+                    style={{ paddingRight: "40px" }}
+                  />
+                  <span
+                    className='pointer'
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    <img src='assets/img/icon/18.png' alt='Toggle Password' />
                   </span>
                 </div>
                 <Link className='btn btn-base tt-uppercase w-100' href='#'>

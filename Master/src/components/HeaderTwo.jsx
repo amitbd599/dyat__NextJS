@@ -427,7 +427,7 @@ const HeaderTwo = () => {
               </li>
               <li>
                 <Link
-                  className={location === "/contact" ? "current" : ""}
+                  className={["/contact"].includes(location) ? "active" : ""}
                   href='/contact'
                 >
                   Contact Us
@@ -615,7 +615,7 @@ const HeaderTwo = () => {
             }`}
             id='xdyat_main_menu'
           >
-            <ul className='navbar-nav menu-open ps-lg-5 pe-xl-4 text-end'>
+            <ul className='navbar-nav menu-open ps-lg-5 pe-xl-4 text-end '>
               <li
                 className={`menu-item-has-children ${
                   activeMenu === 0 ? "show" : ""
@@ -627,6 +627,11 @@ const HeaderTwo = () => {
                     e.preventDefault();
                     handleSubMenuToggle(0);
                   }}
+                  className={
+                    ["/", "/index-2", "/index-3"].includes(location)
+                      ? "active"
+                      : ""
+                  }
                 >
                   Home
                 </Link>
@@ -635,19 +640,39 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 0 ? "block" : "none" }}
                 >
                   <li>
-                    <Link href='/'>Home 01</Link>
+                    <Link
+                      href='/'
+                      className={location === "/" ? "current" : ""}
+                    >
+                      Home 01
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/index-2'>Home 02</Link>
+                    <Link
+                      href='/index-2'
+                      className={location === "/index-2" ? "current" : ""}
+                    >
+                      Home 02
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/index-3'>Home 03</Link>
+                    <Link
+                      href='/index-3'
+                      className={location === "/index-3" ? "current" : ""}
+                    >
+                      Home 03
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <Link href='/about'>About Us</Link>
+                <Link
+                  href='/about'
+                  className={location === "/about" ? "active" : ""}
+                >
+                  About Us
+                </Link>
               </li>
 
               <li
@@ -661,6 +686,11 @@ const HeaderTwo = () => {
                     e.preventDefault();
                     handleSubMenuToggle(1);
                   }}
+                  className={
+                    ["/tournament", "/tournament-details"].includes(location)
+                      ? "active"
+                      : ""
+                  }
                 >
                   Tournament
                 </Link>
@@ -669,10 +699,22 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 1 ? "block" : "none" }}
                 >
                   <li>
-                    <Link href='/tournament'>Tournament</Link>
+                    <Link
+                      href='/tournament'
+                      className={location === "/tournament" ? "current" : ""}
+                    >
+                      Tournament
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/tournament-details'>Tournament Details</Link>
+                    <Link
+                      href='/tournament-details'
+                      className={
+                        location === "/tournament-details" ? "current" : ""
+                      }
+                    >
+                      Tournament Details
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -688,6 +730,17 @@ const HeaderTwo = () => {
                     e.preventDefault();
                     handleSubMenuToggle(2);
                   }}
+                  className={
+                    [
+                      "/shop",
+                      "/shop-details",
+                      "/explore-product",
+                      "/cart",
+                      "/checkout",
+                    ].includes(location)
+                      ? "active"
+                      : ""
+                  }
                 >
                   Shop
                 </Link>
@@ -696,19 +749,46 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 2 ? "block" : "none" }}
                 >
                   <li>
-                    <Link href='/shop'>Shop</Link>
+                    <Link
+                      href='/shop'
+                      className={location === "/shop" ? "active" : ""}
+                    >
+                      Shop
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/shop-details'>Shop Details</Link>
+                    <Link
+                      href='/shop-details'
+                      className={location === "/shop-details" ? "active" : ""}
+                    >
+                      Shop Details
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/explore-product'>Explore Product</Link>
+                    <Link
+                      href='/explore-product'
+                      className={
+                        location === "/explore-product" ? "active" : ""
+                      }
+                    >
+                      Explore Product
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/cart'>Cart</Link>
+                    <Link
+                      href='/cart'
+                      className={location === "/cart" ? "active" : ""}
+                    >
+                      Cart
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/checkout'>Checkout</Link>
+                    <Link
+                      href='/checkout'
+                      className={location === "/checkout" ? "active" : ""}
+                    >
+                      Checkout
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -724,6 +804,28 @@ const HeaderTwo = () => {
                     e.preventDefault();
                     handleSubMenuToggle(3);
                   }}
+                  className={
+                    [
+                      "/blog",
+                      "/blog-list",
+                      "/blog-grid",
+                      "/create-item",
+                      "/blog-details",
+                      "/creators",
+                      "/creator-details",
+                      "/service",
+                      "/service-details",
+                      "/team",
+                      "/team-details",
+                      "/auction",
+                      "/help-center",
+                      "/login",
+                      "/wallet",
+                      "/error",
+                    ].includes(location)
+                      ? "active"
+                      : ""
+                  }
                 >
                   Pages
                 </Link>
@@ -732,21 +834,147 @@ const HeaderTwo = () => {
                   style={{ display: activeMenu === 3 ? "block" : "none" }}
                 >
                   <li>
-                    <Link href='/blog'>Blog</Link>
+                    <Link
+                      className={location === "/blog" ? "current" : ""}
+                      href='/blog'
+                    >
+                      Blog
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/blog-details'>Blog Details</Link>
+                    <Link
+                      className={location === "/blog-list" ? "current" : ""}
+                      href='/blog-list'
+                    >
+                      Blog List
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/service'>Service</Link>
+                    <Link
+                      className={location === "/blog-grid" ? "current" : ""}
+                      href='/blog-grid'
+                    >
+                      Blog Grid
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/team'>Team</Link>
+                    <Link
+                      className={location === "/blog-details" ? "current" : ""}
+                      href='/blog-details'
+                    >
+                      Blog Details
+                    </Link>
                   </li>
                   <li>
-                    <Link href='/contact'>Contact Us</Link>
+                    <Link
+                      className={location === "/create-item" ? "current" : ""}
+                      href='/create-item'
+                    >
+                      Create Items
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/creators" ? "current" : ""}
+                      href='/creators'
+                    >
+                      Creators
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={
+                        location === "/creator-details" ? "current" : ""
+                      }
+                      href='/creator-details'
+                    >
+                      Creator details
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/service" ? "current" : ""}
+                      href='/service'
+                    >
+                      service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={
+                        location === "/service-details" ? "current" : ""
+                      }
+                      href='/service-details'
+                    >
+                      Service Details
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/team" ? "current" : ""}
+                      href='/team'
+                    >
+                      team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/team-details" ? "current" : ""}
+                      href='/team-details'
+                    >
+                      team Details
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/auction" ? "current" : ""}
+                      href='/auction'
+                    >
+                      Auction
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/help-center" ? "current" : ""}
+                      href='/help-center'
+                    >
+                      Help Center
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/login" ? "current" : ""}
+                      href='/login'
+                    >
+                      Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/wallet" ? "current" : ""}
+                      href='/wallet'
+                    >
+                      Wallet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={location === "/error" ? "current" : ""}
+                      href='/error'
+                    >
+                      404
+                    </Link>
                   </li>
                 </ul>
+              </li>
+
+              <li>
+                <Link
+                  className={location === "/contact" ? "active" : ""}
+                  href='/contact'
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>

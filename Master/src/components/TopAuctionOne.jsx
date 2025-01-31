@@ -104,7 +104,7 @@ const TopAuctionOne = () => {
                   <div className='details'>
                     <h5 className='tt-uppercase d-flex justify-content-between align-items-center mb-3'>
                       Lune Studio
-                      <i className='far fa-heart' />
+                      <i className='far fa-heart pointer' />
                     </h5>
                     <div className='d-flex justify-content-between align-items-center'>
                       <div className='left'>

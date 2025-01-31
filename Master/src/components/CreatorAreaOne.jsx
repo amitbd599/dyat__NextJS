@@ -66,7 +66,7 @@ const CreatorAreaOne = () => {
                   </div>
                 </div>
                 <div className='wishlist product-item__wishlist'>
-                  <i className='fas fa-heart' />
+                  <i className='fas fa-heart pointer' />
                   89
                 </div>
               </div>
@@ -116,7 +116,7 @@ const CreatorAreaOne = () => {
                   </div>
                 </div>
                 <div className='wishlist product-item__wishlist'>
-                  <i className='fas fa-heart' />
+                  <i className='fas fa-heart pointer' />
                   89
                 </div>
               </div>
@@ -166,7 +166,7 @@ const CreatorAreaOne = () => {
                   </div>
                 </div>
                 <div className='wishlist product-item__wishlist'>
-                  <i className='fas fa-heart' />
+                  <i className='fas fa-heart pointer' />
                   89
                 </div>
               </div>

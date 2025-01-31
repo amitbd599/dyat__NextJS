@@ -112,9 +112,9 @@ const CreatorDetailsArea = () => {
                   <input className='item-field' type='text' placeholder='-/-' />
                 </div>
               </div>
-              <Link className='btn btn-base bid mt-4' href='#'>
+              <button className='btn btn-base bid mt-4' type='submit'>
                 Submit Now
-              </Link>
+              </button>
             </form>
           </div>
         </div>
